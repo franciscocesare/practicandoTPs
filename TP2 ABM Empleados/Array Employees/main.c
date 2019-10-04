@@ -19,8 +19,8 @@
 typedef struct
 {
     int id;
-    char name[51];
-    char lastName[51];
+    char name[30];
+    char lastName[30];
     float salary;
     int sector;
     int isEmpty;
@@ -147,8 +147,10 @@ int addEmployee(Employee vec[], int tam, int idEmployee)
     int index;
     ///int esta;
     ///int id;
-    char name[51];
-    char lastName[51];
+    char name[30];
+    char auxName[25];
+    char lastName[40];
+    char auxLastName[30];
     float salary;
     int sector;
 ///   int isEmpty;
@@ -168,11 +170,29 @@ int addEmployee(Employee vec[], int tam, int idEmployee)
         vec[index].id = idEmployee;
         printf("Ingrese nombre: ");
         fflush(stdin);
-        gets(name);
+        gets(auxName);
+        while (strlen (auxName) >25)///condicion de dato invalido, para que lo siga pidiendo
+        {
+            printf("Error Nombre muy largo, ingrese el nombre: ");
+            fflush(stdin);
+            gets(auxName);
+        }
+        strcpy (name, auxName); ///si el dato es valido, lo copio en nombre!
+
+        //return 0;
 
         printf("Ingrese apellido: ");
         fflush(stdin);
-        gets(lastName);
+        gets(auxLastName);
+        while (strlen (auxLastName) >30)///condicion de dato invalido, para que lo siga pidiendo
+        {
+            printf("Error apellido muy largo, ingrese el Apellido: ");
+            fflush(stdin);
+            gets(auxLastName);
+        }
+        strcpy (lastName, auxLastName); ///si el dato es valido, lo copio en nombre!
+
+        //return 0;
 
         printf("Ingrese salario: ");
         scanf("%f", &salary);
@@ -188,7 +208,7 @@ int addEmployee(Employee vec[], int tam, int idEmployee)
 
         vec[index] = newEmployee(idEmployee, name, lastName, salary, sector);
         todoOk = 1;
-        printf("Se ha realizado el alta del empleade\n\n");
+        printf("\nSe ha realizado el alta del empleade\n\n");
 
     }
 
@@ -305,7 +325,7 @@ int removeEmployee(Employee vec[], int tam)
         {
             vec[index].isEmpty = 1;
             todoOk = 1;
-            printf("Baja de empleade exitosa!!!");
+            printf("Baja de empleade exitosa!\n");
         }
         else
         {
