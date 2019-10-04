@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include "string.h"
 #include "conio.h"
+#include "ctype.h"
 
-#define TAM 2
+#define TAM 5
 
-struct
+typedef struct
 {
     int id;
     char name[51];
@@ -13,28 +14,29 @@ struct
     float salary;
     int sector;
     int isEmpty;
-} typedef Employee;
+} Employee;
 
 ///prototipos funciones para despues llevarme
 
-///cambiar todas por empleado
-
 void inicializarEmpleados(Employee vec[], int tam);
 int buscarLibre(Employee vec[], int tam);
-int altaEmpleado(Employee vec[], int tam);
+int altaEmpleado(Employee vec[], int tam,int idEmployee);
 Employee newEmployee(int id, char name[],char lastName[], float salary, int sector);
 void mostrarEmpleado(Employee x);
 void mostrarEmpleados(Employee vec[], int tam);
 int buscarEmpleado(int id, Employee vec[], int tam);
 int ModificarEmpleado(Employee vec[], int tam);
-void ordenarEmpleados(Employee vec[], int tam);
+void sortEmployeesByLastName(Employee vec[], int tam);
+void sortEmployeesBySector(Employee vec[], int tam);
 int bajaEmpleado(Employee vec[], int tam);
 int menu();
+int menuInformes();
 
 int main()
 {
     Employee lista[TAM];
     char salir = 'n';
+    int idEmployee=1;
 
     inicializarEmpleados( lista, TAM);
 
@@ -45,7 +47,11 @@ int main()
         switch( menu())
         {
         case 1:
-            altaEmpleado(lista, TAM);
+            if (altaEmpleado(lista, TAM, idEmployee))
+            {
+                idEmployee ++;
+            }
+
             break;
 
         case 2:
@@ -57,11 +63,29 @@ int main()
             break;
 
         case 4:
-            mostrarEmpleados(lista, TAM);
-            break;
+            switch (menuInformes())
+                {
+                    case 1:
+                        printf("empleados ordenados alfabéticamente por Apellido y Sector\n\n");
+                        sortEmployeesByLastName(lista, TAM);
+                        ///sortEmployeesBySector(lista,TAM);
+                        mostrarEmpleados(lista, TAM);
+                        system("pause");
+
+                        break;
+
+                    case 2:
+                    printf("Total y promedio de los salarios\n");
+
+                    printf("empleades que superan el salario promedio\n");
+
+             mostrarEmpleados(lista, TAM);
+                    break;
+                }
+                break;
 
         case 5:
-            printf("Confirma salir del ABM emplados?:");
+            printf("Confirma salir del ABM emplades?:");
             fflush(stdin);
             salir = getche();
             break;
@@ -71,21 +95,23 @@ int main()
         }
         system("pause");
     }
-    while(salir == 'n');
+    while(tolower (salir == 'n'));
 
     return 0;
 }
+
+///desarrollo funciones que despues me llevo a employees.c
 
 int menu()
 {
     int opcion;
 
     system("cls");
-    printf("****** ABM Empleados *******\n\n");
-    printf("1-Alta Empleado\n");
-    printf("2-Baja Empleado\n");
-    printf("3-Modificar Empleado \n");
-    printf("4-Listar Empleados\n");
+    printf("****** ABM Empleades *******\n\n");
+    printf("1-Alta Empleade\n");
+    printf("2-Baja Empleade\n");
+    printf("3-Modificar Empleade \n");
+    printf("4-Informes Empleades\n");
     printf("5-Salir\n\n");
     printf("Ingrese opcion: ");
     scanf("%d", &opcion);
@@ -93,8 +119,8 @@ int menu()
     return opcion;
 }
 
-///desarrollo funciones que despues me llevo a employees.c
-int altaEmpleado(Employee vec[], int tam)
+
+int altaEmpleado(Employee vec[], int tam, int idEmployee)
 {
 
     int todoOk = 0;
@@ -105,11 +131,11 @@ int altaEmpleado(Employee vec[], int tam)
     char lastName[51];
     float salary;
     int sector;
- ///   int isEmpty;
+///   int isEmpty;
 
     system("cls");
 
-    printf("*****Alta Empleado*****\n\n");
+    printf("*****Alta Empleade*****\n\n");
 
     indice = buscarLibre(vec, tam); ///a ver si hay lugar libre, lo guarda en indice 1 si hay, -1 sino
 
@@ -119,49 +145,41 @@ int altaEmpleado(Employee vec[], int tam)
     }
     else
     {
+        vec[indice].id = idEmployee;
+        printf("Ingrese nombre: ");
+        fflush(stdin);
+        gets(name);
 
-        printf("Ingrese id: ");
-        scanf("%d", &id);
+        printf("Ingrese apellido: ");
+        fflush(stdin);
+        gets(lastName);
 
-        esta = buscarEmpleado(id, vec, tam);
+        printf("Ingrese salario: ");
+        scanf("%f", &salary);
 
-        if( esta != -1)
+        printf("Ingrese sector, sectores de 1 al 5: ");
+        fflush(stdin);
+        scanf("%d", &sector);
+        while (sector<0 || sector>5)
         {
-            printf("\nEse id ya se encuentra registrado\n\n");
-            mostrarEmpleado(vec[esta]);
-
-        }
-        else
-        {
-            printf("Ingrese nombre: ");
-            fflush(stdin);
-            gets(name);
-
-            printf("Ingrese apellido: ");
-            fflush(stdin);
-            gets(lastName);
-
-            printf("Ingrese salario: ");
-            scanf("%f", &salary);
-
-            printf("Ingrese sector: ");
-            fflush(stdin);
+            printf("Sector invalido, intentelo nuevamente: ");
             scanf("%d", &sector);
-
-            vec[indice] = newEmployee(id, name, lastName, salary, sector);
-            todoOk = 1;
-            printf("Alta exitosa!!\n\n");
-
         }
+
+        vec[indice] = newEmployee(idEmployee, name, lastName, salary, sector);
+        todoOk = 1;
+        printf("Alta exitosa!!\n\n");
 
     }
+
+
 
     return todoOk;
 }
 
 Employee newEmployee(
 
-    int id,
+    int idEmployee,
     char name[],
     char lastName[],
     float salary,
@@ -169,7 +187,7 @@ Employee newEmployee(
 {
 
     Employee al;
-    al.id = id;
+    al.id = idEmployee;
     strcpy( al.name, name);
     strcpy( al.lastName, lastName);
     al.sector = sector;
@@ -181,10 +199,10 @@ Employee newEmployee(
 
 void mostrarEmpleado(Employee x)
 {
-    printf(" %d  %10s   %10s      %d    %3.2f \n",
+    printf(" %d  %10s   %10s    %d    %3.2f \n",
            x.id,
-           x.name,
            x.lastName,
+           x.name,
            x.sector,
            x.salary);
 }
@@ -195,7 +213,7 @@ void mostrarEmpleados(Employee vec[], int tam)
     int flag = 0;
     system("cls");
 
-    printf(" ID    NOMBRE    APELLIDO   SECTOR      SALARIO\n\n");
+    printf(" ID   APELLIDO    NOMBRE    SECTOR      SALARIO\n\n");
 
     for(int i=0; i < tam; i++)
     {
@@ -208,13 +226,39 @@ void mostrarEmpleados(Employee vec[], int tam)
 
     if( flag == 0)
     {
-        printf("\nNo hay empleados que mostrar\n");
+        printf("\nNo hay empleades que mostrar\n");
     }
 
     printf("\n\n");
 }
 
-void ordenarEmpleados(Employee vec[], int tam) ///por nombre por ahora
+///aca quise ordenar en una funcion por apellido y por sector
+
+void sortEmployeesByLastName(Employee vec[], int tam)
+{
+    Employee auxEmployeeLastName;
+    Employee auxEmployeeSector;
+
+    for(int i= 0; i < tam-1 ; i++)
+    {
+        for(int j= i+1; j <tam; j++)
+        {
+            if( vec[i].lastName > vec[j].lastName && vec [i].sector > vec [i].sector)
+            {
+                auxEmployeeLastName = vec[i];
+                vec[i] = vec[j];
+                vec[j] = auxEmployeeLastName;
+                auxEmployeeSector = vec[i];
+                vec[i] = vec[j];
+                vec[j] = auxEmployeeSector;
+
+            }
+        }
+    }
+    ///printf("Empleades Ordenados\n\n");
+}
+
+/*void sortEmployeesBySector(Employee vec[], int tam) ///por nombre por ahora
 {
     Employee auxEmployee;
 
@@ -222,7 +266,7 @@ void ordenarEmpleados(Employee vec[], int tam) ///por nombre por ahora
     {
         for(int j= i+1; j <tam; j++)
         {
-            if( vec[i].name > vec[j].name)
+            if( vec[i].sector > vec[j].sector)
             {
                 auxEmployee = vec[i];
                 vec[i] = vec[j];
@@ -230,9 +274,9 @@ void ordenarEmpleados(Employee vec[], int tam) ///por nombre por ahora
             }
         }
     }
-    printf("Empleados Ordenados\n\n");
+    ///printf("Empleades Ordenados\n\n");
 }
-
+*/
 int bajaEmpleado(Employee vec[], int tam)
 {
     int todoOk = 0;
@@ -240,7 +284,7 @@ int bajaEmpleado(Employee vec[], int tam)
     int indice;
     char confirma;
     system("cls");
-    printf("***** Baja Empleado *****\n\n");
+    printf("***** Baja Empleade *****\n\n");
     printf("Ingrese id: ");
     scanf("%d", &id);
 
@@ -248,7 +292,7 @@ int bajaEmpleado(Employee vec[], int tam)
 
     if( indice == -1)
     {
-        printf("No existe un empleado con ese ID\n\n");
+        printf("No existe un empleade con ese ID\n\n");
 
     }
     else
@@ -264,11 +308,11 @@ int bajaEmpleado(Employee vec[], int tam)
         {
             vec[indice].isEmpty = 1;
             todoOk = 1;
-            printf("Baja exitosa!!!");
+            printf("Baja de empleade exitosa!!!");
         }
         else
         {
-            printf("Se ha cancelado la operacion");
+            printf("\nNo se realizo la baja correspondiente ");
         }
     }
 
@@ -282,8 +326,8 @@ int ModificarEmpleado(Employee vec[], int tam)
     int indice;
     ///char confirma;
     system("cls");
-    printf("***** Modificar Empleado *****\n\n");
-    printf("Ingrese id: ");
+    printf("***** Modificar Empleade *****\n\n");
+    printf("Ingrese id del empleade: ");
     scanf("%d", &id);
     int opcion;
 
@@ -291,7 +335,7 @@ int ModificarEmpleado(Employee vec[], int tam)
 
     if( indice == -1)
     {
-        printf("No existe un empleado con ese id\n\n");
+        printf("No existe un empleade con ese id\n\n");
 
     }
     else
@@ -299,34 +343,42 @@ int ModificarEmpleado(Employee vec[], int tam)
 
         mostrarEmpleado(vec[indice]);
 
+        printf("***MODIFICAR UN EMPLEADE***");
         printf("1- Modificar nombre\n");
         printf("2- Modificar apellido\n");
         printf("3- Modificar salario\n");
         printf("4- Modificar sector\n");
         printf("5- Salir\n\n");
-        printf("Ingrese opcion: ");
+        printf("Ingrese opcion: \n");
         scanf("%d", &opcion);
         switch(opcion)
         {
         case 1:
             printf("Ingrese nombre nuevo: ");
-            scanf("%s", &vec[indice].name);
+            fflush(stdin);
+            scanf("%s", vec[indice].name);
             break;
 
         case 2:
-            printf("Ingrese apellido nuevo: ");
-            scanf("%s", &vec[indice].lastName);
-            ///vec[indice].promedio = (float) (vec[indice].nota1  + vec[indice].nota2)/2;
+            printf("Ingrese nuevo apellido : ");
+            fflush(stdin);
+            scanf("%s", vec[indice].lastName);
             break;
 
         case 3:
-            printf("Ingrese nueva salario: ");
+            printf("Ingrese nuevo salario: ");
             scanf("%f", &vec[indice].salary);
             break;
 
         case 4:
-            printf("Ingrese nueva sector: ");
+            printf("Ingrese nuevo sector: ");
             scanf("%d", &vec[indice].sector);
+            while (vec[indice].sector<0 || vec[indice].sector>5)
+            {
+                printf("Sector invalido, intentelo nuevamente: ");
+                scanf("%d", &vec[indice].sector);
+            }
+
             break;
 
         case 5:
@@ -377,4 +429,17 @@ int buscarEmpleado(int id, Employee vec[], int tam)
     return indice;
 }
 
+int menuInformes()
+{
+    int opcion;
 
+    system("cls");
+    printf("*** Menu de informes Empleades ***\n\n");
+    printf("1-Empleades ordenados alfabéticamente por Apellido y Sector\n");
+    printf("2-Total y promedio de los salarios, y cuántos empleades superan el salario promedio\n");
+    printf("3-Salir\n\n");
+    printf("Ingrese opcion: ");
+    scanf("%d", &opcion);
+
+    return opcion;
+}
