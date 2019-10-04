@@ -4,7 +4,17 @@
 #include "conio.h"
 #include "ctype.h"
 
-#define TAM 5
+#define TAM 4
+/*
+-REVISAR ALGUNAS VALIDACIONES HACER POR EJEMPLO QUE NO SE PASEN DEL STRING?
+-PASAR A .C LOS DESARROLLOS Y .H LAS CABECERAS LAS FUNCIONES
+-VER TOLOWERCASE EN ALGUNOS CASOS
+-HACER ULTIMO PUNTO DE INFORMES
+-ORDENAR UN POCO LOS PRINT QUE ESTAN DESFAZADOS
+-DEFINIR EL TAM EN 1000
+-BORRAR LOS HARDCODEADOS
+-NO HICE findEmployeeById, esta mal????
+*/
 
 typedef struct
 {
@@ -18,27 +28,37 @@ typedef struct
 
 ///prototipos funciones para despues llevarme
 
-void inicializarEmpleados(Employee vec[], int tam);
-int buscarLibre(Employee vec[], int tam);
-int altaEmpleado(Employee vec[], int tam,int idEmployee);
+void initEmployee(Employee vec[], int tam);
+int findFree(Employee vec[], int tam);
+int addEmployee(Employee vec[], int tam,int idEmployee);
 Employee newEmployee(int id, char name[],char lastName[], float salary, int sector);
-void mostrarEmpleado(Employee x);
-void mostrarEmpleados(Employee vec[], int tam);
-int buscarEmpleado(int id, Employee vec[], int tam);
-int ModificarEmpleado(Employee vec[], int tam);
+void showEmployee(Employee x);
+void printEmployees(Employee vec[], int tam);
+int findEmployee(int id, Employee vec[], int tam);
+int modifyEmployee(Employee vec[], int tam);
 void sortEmployeesByLastName(Employee vec[], int tam);
-void sortEmployeesBySector(Employee vec[], int tam);
-int bajaEmpleado(Employee vec[], int tam);
+int removeEmployee(Employee vec[], int tam);
 int menu();
-int menuInformes();
+int menuReports();
 
 int main()
 {
-    Employee lista[TAM];
+    Employee lista[TAM]=
+    {
+        {1121, "juan", "perez", 30000, 2,0},
+        {1431, "pepe", "gutierrez", 35000, 3,0},
+        {1317, "alberto", "gerez", 20000, 4,0},
+        {1521, "roque", "zalar", 27000, 1,0},
+
+
+    };
+
+
+
     char salir = 'n';
     int idEmployee=1;
 
-    inicializarEmpleados( lista, TAM);
+    //initEmployee(lista, TAM);
 
     ///hardcodearEmpleados(lista, TAM, 5);///el numero final es la cantidad a mostrar hardcodeados
 
@@ -47,7 +67,7 @@ int main()
         switch( menu())
         {
         case 1:
-            if (altaEmpleado(lista, TAM, idEmployee))
+            if (addEmployee(lista, TAM, idEmployee))
             {
                 idEmployee ++;
             }
@@ -55,34 +75,34 @@ int main()
             break;
 
         case 2:
-            bajaEmpleado(lista, TAM);
+            removeEmployee(lista, TAM);
             break;
 
         case 3:
-            ModificarEmpleado(lista, TAM);
+            modifyEmployee(lista, TAM);
             break;
 
         case 4:
-            switch (menuInformes())
-                {
-                    case 1:
-                        printf("empleados ordenados alfabéticamente por Apellido y Sector\n\n");
-                        sortEmployeesByLastName(lista, TAM);
-                        ///sortEmployeesBySector(lista,TAM);
-                        mostrarEmpleados(lista, TAM);
-                        system("pause");
+            switch (menuReports())
+            {
+            case 1:
+                printf("empleados ordenados alfabeticamente por Apellido y Sector\n\n");
+                sortEmployeesByLastName(lista, TAM);
+                ///sortEmployeesBySector(lista,TAM);
+                printEmployees(lista, TAM);
+                system("pause");
 
-                        break;
-
-                    case 2:
-                    printf("Total y promedio de los salarios\n");
-
-                    printf("empleades que superan el salario promedio\n");
-
-             mostrarEmpleados(lista, TAM);
-                    break;
-                }
                 break;
+
+            case 2:
+                printf("Total y promedio de los salarios\n");
+
+                printf("empleades que superan el salario promedio\n");
+
+                printEmployees(lista, TAM);
+                break;
+            }
+            break;
 
         case 5:
             printf("Confirma salir del ABM emplades?:");
@@ -95,7 +115,7 @@ int main()
         }
         system("pause");
     }
-    while(tolower (salir == 'n'));
+    while(tolower(salir == 'n'));
 
     return 0;
 }
@@ -120,13 +140,13 @@ int menu()
 }
 
 
-int altaEmpleado(Employee vec[], int tam, int idEmployee)
+int addEmployee(Employee vec[], int tam, int idEmployee)
 {
 
     int todoOk = 0;
-    int indice;
-    int esta;
-    int id;
+    int index;
+    ///int esta;
+    ///int id;
     char name[51];
     char lastName[51];
     float salary;
@@ -137,15 +157,15 @@ int altaEmpleado(Employee vec[], int tam, int idEmployee)
 
     printf("*****Alta Empleade*****\n\n");
 
-    indice = buscarLibre(vec, tam); ///a ver si hay lugar libre, lo guarda en indice 1 si hay, -1 sino
+    index = findFree(vec, tam); ///a ver si hay lugar libre, lo guarda en index 1 si hay, -1 sino
 
-    if( indice == -1)
+    if( index == -1)
     {
         printf("\nEl Sistema Esta Completo\n\n");
     }
     else
     {
-        vec[indice].id = idEmployee;
+        vec[index].id = idEmployee;
         printf("Ingrese nombre: ");
         fflush(stdin);
         gets(name);
@@ -166,9 +186,9 @@ int altaEmpleado(Employee vec[], int tam, int idEmployee)
             scanf("%d", &sector);
         }
 
-        vec[indice] = newEmployee(idEmployee, name, lastName, salary, sector);
+        vec[index] = newEmployee(idEmployee, name, lastName, salary, sector);
         todoOk = 1;
-        printf("Alta exitosa!!\n\n");
+        printf("Se ha realizado el alta del empleade\n\n");
 
     }
 
@@ -197,7 +217,7 @@ Employee newEmployee(
     return al;
 }
 
-void mostrarEmpleado(Employee x)
+void showEmployee(Employee x)
 {
     printf(" %d  %10s   %10s    %d    %3.2f \n",
            x.id,
@@ -207,7 +227,7 @@ void mostrarEmpleado(Employee x)
            x.salary);
 }
 
-void mostrarEmpleados(Employee vec[], int tam)
+void printEmployees(Employee vec[], int tam)
 {
 
     int flag = 0;
@@ -219,7 +239,7 @@ void mostrarEmpleados(Employee vec[], int tam)
     {
         if( vec[i].isEmpty == 0)
         {
-            mostrarEmpleado(vec[i]);
+            showEmployee(vec[i]);
             flag = 1;
         }
     }
@@ -232,65 +252,42 @@ void mostrarEmpleados(Employee vec[], int tam)
     printf("\n\n");
 }
 
-///aca quise ordenar en una funcion por apellido y por sector
+///ordenar en una funcion por apellido y por sector
 
 void sortEmployeesByLastName(Employee vec[], int tam)
 {
-    Employee auxEmployeeLastName;
     Employee auxEmployeeSector;
 
     for(int i= 0; i < tam-1 ; i++)
     {
         for(int j= i+1; j <tam; j++)
         {
-            if( vec[i].lastName > vec[j].lastName && vec [i].sector > vec [i].sector)
+            if(strcmp(vec[i].lastName, vec[j].lastName)>0 || vec [i].sector > vec [i].sector)
             {
-                auxEmployeeLastName = vec[i];
-                vec[i] = vec[j];
-                vec[j] = auxEmployeeLastName;
                 auxEmployeeSector = vec[i];
                 vec[i] = vec[j];
                 vec[j] = auxEmployeeSector;
-
             }
         }
     }
-    ///printf("Empleades Ordenados\n\n");
+
 }
 
-/*void sortEmployeesBySector(Employee vec[], int tam) ///por nombre por ahora
-{
-    Employee auxEmployee;
 
-    for(int i= 0; i < tam-1 ; i++)
-    {
-        for(int j= i+1; j <tam; j++)
-        {
-            if( vec[i].sector > vec[j].sector)
-            {
-                auxEmployee = vec[i];
-                vec[i] = vec[j];
-                vec[j] = auxEmployee;
-            }
-        }
-    }
-    ///printf("Empleades Ordenados\n\n");
-}
-*/
-int bajaEmpleado(Employee vec[], int tam)
+int removeEmployee(Employee vec[], int tam)
 {
     int todoOk = 0;
     int id;
-    int indice;
+    int index;
     char confirma;
     system("cls");
     printf("***** Baja Empleade *****\n\n");
     printf("Ingrese id: ");
     scanf("%d", &id);
 
-    indice = buscarEmpleado(id, vec, tam);
+    index = findEmployee(id, vec, tam);
 
-    if( indice == -1)
+    if( index == -1)
     {
         printf("No existe un empleade con ese ID\n\n");
 
@@ -298,7 +295,7 @@ int bajaEmpleado(Employee vec[], int tam)
     else
     {
 
-        mostrarEmpleado(vec[indice]);
+        showEmployee(vec[index]);
 
         printf("\nConfirma baja?");
         fflush(stdin);
@@ -306,7 +303,7 @@ int bajaEmpleado(Employee vec[], int tam)
 
         if( confirma == 's')
         {
-            vec[indice].isEmpty = 1;
+            vec[index].isEmpty = 1;
             todoOk = 1;
             printf("Baja de empleade exitosa!!!");
         }
@@ -318,32 +315,32 @@ int bajaEmpleado(Employee vec[], int tam)
 
     return todoOk;
 }
-int ModificarEmpleado(Employee vec[], int tam)
+int modifyEmployee(Employee vec[], int tam)
 {
 
     int todoOk = 0;
     int id;
-    int indice;
+    int index;
     ///char confirma;
     system("cls");
-    printf("***** Modificar Empleade *****\n\n");
+    printf("\n***** Modificar Empleade *****\n\n");
     printf("Ingrese id del empleade: ");
     scanf("%d", &id);
     int opcion;
 
-    indice = buscarEmpleado(id, vec, tam);
+    index = findEmployee(id, vec, tam);
 
-    if( indice == -1)
+    if( index == -1)
     {
         printf("No existe un empleade con ese id\n\n");
 
     }
     else
     {
+        printf(" ID     APELLIDO       NOMBRE  SECTOR  SALARIO\n\n");
+        showEmployee(vec[index]);
 
-        mostrarEmpleado(vec[indice]);
-
-        printf("***MODIFICAR UN EMPLEADE***");
+        printf("\n\n***QUE DESEA MODIFICAR DEL EMPLEADE***\n\n");
         printf("1- Modificar nombre\n");
         printf("2- Modificar apellido\n");
         printf("3- Modificar salario\n");
@@ -356,27 +353,27 @@ int ModificarEmpleado(Employee vec[], int tam)
         case 1:
             printf("Ingrese nombre nuevo: ");
             fflush(stdin);
-            scanf("%s", vec[indice].name);
+            scanf("%s", vec[index].name);
             break;
 
         case 2:
             printf("Ingrese nuevo apellido : ");
             fflush(stdin);
-            scanf("%s", vec[indice].lastName);
+            scanf("%s", vec[index].lastName);
             break;
 
         case 3:
             printf("Ingrese nuevo salario: ");
-            scanf("%f", &vec[indice].salary);
+            scanf("%f", &vec[index].salary);
             break;
 
         case 4:
             printf("Ingrese nuevo sector: ");
-            scanf("%d", &vec[indice].sector);
-            while (vec[indice].sector<0 || vec[indice].sector>5)
+            scanf("%d", &vec[index].sector);
+            while (vec[index].sector<0 || vec[index].sector>5)
             {
                 printf("Sector invalido, intentelo nuevamente: ");
-                scanf("%d", &vec[indice].sector);
+                scanf("%d", &vec[index].sector);
             }
 
             break;
@@ -390,7 +387,7 @@ int ModificarEmpleado(Employee vec[], int tam)
     return todoOk;
 }
 
-void inicializarEmpleados(Employee vec[], int tam)///inicia el array, pone todas las posicciones en 1. VACIO
+void initEmployee(Employee vec[], int tam)///inicia el array, pone todas las posicciones en 1. VACIO
 {
     for(int i = 0; i < tam; i++)
     {
@@ -399,37 +396,37 @@ void inicializarEmpleados(Employee vec[], int tam)///inicia el array, pone todas
 }
 
 
-int buscarLibre(Employee vec[], int tam)
+int findFree(Employee vec[], int tam)
 {
-    int indice = -1;
+    int index = -1;
 
     for(int i=0; i < tam; i++)
     {
         if( vec[i].isEmpty == 1 )
         {
-            indice = i;
+            index = i;
             break;
         }
     }
-    return indice;
+    return index;
 }
 
-int buscarEmpleado(int id, Employee vec[], int tam)
+int findEmployee(int id, Employee vec[], int tam)
 {
-    int indice = -1;
+    int index = -1;
 
     for(int i=0; i < tam; i++)
     {
         if( vec[i].id == id && vec[i].isEmpty == 0)
         {
-            indice = i;
+            index = i;
             break;
         }
     }
-    return indice;
+    return index;
 }
 
-int menuInformes()
+int menuReports()
 {
     int opcion;
 
