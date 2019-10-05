@@ -26,3 +26,21 @@
 
 1570233969 c:\users\alumno\desktop\practicandotps-master\tp2 abm empleados\array employees\arrayemployees.h
 
+1570241078 source:c:\users\usuario\desktop\tp2-cesare francisco\tp2 abm empleados\array employees\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"conio.h"
+	"ctype.h"
+
+1570223128 c:\users\usuario\desktop\tp2-cesare francisco\tp2 abm empleados\array employees\arrayemployees.h
+
+1570240366 source:c:\users\usuario\desktop\tp2-cesare francisco\tp2 abm empleados\array employees\main.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"conio.h"
+	"ctype.h"
+

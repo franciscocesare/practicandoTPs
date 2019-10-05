@@ -5,6 +5,12 @@
 #include "conio.h"
 #include "ctype.h"
 
+/** \brief Menu options of employees array
+*
+* \param options in switch
+* \return int - option
+*
+*/
 int menu()
 {
     int opcion;
@@ -22,6 +28,13 @@ int menu()
     return opcion;
 }
 
+/** \brief add in a existing list of employees the values received as parameters
+ * in the first empty position
+ * \param vec employee
+ * \param tam int
+ * \param id int
+ * \return int Return todoOk if Ok
+ */
 
 int addEmployee(Employee vec[], int tam, int idEmployee)
 {
@@ -70,10 +83,7 @@ int addEmployee(Employee vec[], int tam, int idEmployee)
             fflush(stdin);
             gets(auxLastName);
         }
-        strcpy (lastName, auxLastName); ///si el dato es valido, lo copio en nombre!
-
-
-
+        strcpy (lastName, auxLastName);
         printf("Ingrese salario: ");
         scanf("%f", &salary);
 
@@ -91,9 +101,6 @@ int addEmployee(Employee vec[], int tam, int idEmployee)
         printf("\nSe ha realizado el alta del empleade\n\n");
 
     }
-
-
-
     return todoOk;
 }
 
@@ -127,6 +134,13 @@ void showEmployee(Employee x)
            x.salary);
 }
 
+/** \brief print the content of employees array
+*
+* \param vec Employee[]
+* \param tam int
+* \return array printed
+*
+*/
 void printEmployees(Employee vec[], int tam)
 {
 
@@ -152,7 +166,14 @@ void printEmployees(Employee vec[], int tam)
     printf("\n\n");
 }
 
-///ordenar en una funcion por apellido y por sector
+/** \brief Sort the elements in the array of employees, the argument order
+indicate  DOWN order
+*
+* \param vec Employee []
+* \param tam int
+* \return elements sorted in Down order
+*
+*/
 
 void sortEmployeesByLastName(Employee vec[], int tam)
 {
@@ -162,7 +183,7 @@ void sortEmployeesByLastName(Employee vec[], int tam)
     {
         for(int j= i+1; j <tam; j++)
         {
-            if(strcmp(vec[i].lastName, vec[j].lastName)>0 || vec [i].sector > vec [i].sector)
+            if(strcmp(vec[i].lastName, vec[j].lastName)>0 || vec [i].sector > vec [j].sector)
             {
                 auxEmployeeSector = vec[i];
                 vec[i] = vec[j];
@@ -173,7 +194,13 @@ void sortEmployeesByLastName(Employee vec[], int tam)
 
 }
 
-
+/** \brief Remove a Employee by Id (put isEmpty Flag in 1)
+*
+* \param vec Employee[]
+* \param tam int
+* \return int Return todoOk is ok
+*
+*/
 int removeEmployee(Employee vec[], int tam)
 {
     int todoOk = 0;
@@ -286,6 +313,12 @@ int modifyEmployee(Employee vec[], int tam)
     return todoOk;
 }
 
+/** \brief To indicate that all position in the array are empty,
+ * this function put the flag (isEmpty) in 1 in all
+ * position of the array
+ * \param vec[i] Employee
+ * \param tam int Array length
+ */
 void initEmployee(Employee vec[], int tam)///inicia el array, pone todas las posicciones en 1. VACIO
 {
     for(int i = 0; i < tam; i++)
@@ -294,6 +327,13 @@ void initEmployee(Employee vec[], int tam)///inicia el array, pone todas las pos
     }
 }
 
+/** \brief find an free index in the Employee Array, returns the index position in array.
+ *
+ * \param list Employee []
+ * \param tam int
+ * \return Return free index position
+ *
+ */
 
 int findFree(Employee vec[], int tam)
 {
@@ -309,6 +349,14 @@ int findFree(Employee vec[], int tam)
     }
     return index;
 }
+/** \brief find an Employee by Id en returns the index position in array.
+ *
+ * \param id int
+ * \param list Employee []
+ * \param tam int
+ * \return Return employee index position
+ *
+ */
 
 int findEmployee(int id, Employee vec[], int tam)
 {
@@ -325,21 +373,33 @@ int findEmployee(int id, Employee vec[], int tam)
     return index;
 }
 
+/** \brief SubMenu options of reports employees array
+*
+* \param options in switch reports
+* \return int - option
+*
+*/
 int menuReports()
 {
     int opcion;
 
     system("cls");
     printf("*** Menu de informes Empleades ***\n\n");
-    printf("1-Empleades ordenados alfabeticamente por Apellido y Sector\n");
-    printf("2-Total y promedio de los salarios, y cuantos empleades superan el salario promedio\n");
-    printf("3-Salir\n\n");
+    printf("\n1-Empleades ordenados alfabeticamente por Apellido y Sector\n");
+    printf("\n2-Total y promedio de los salarios, y cuantos empleades superan el salario promedio\n");
+    printf("\n3-Salir\n\n");
     printf("Ingrese opcion: ");
     scanf("%d", &opcion);
 
     return opcion;
 }
-
+/** \brief valid an Employee is add in the index i position array.
+ *
+ * \param list Employee []
+ * \param tam int
+ * \return Return flag employee is added
+ *
+ */
 int validsEmployees (Employee vec[], int tam)
 {
     int flagCargado=0;
@@ -362,7 +422,13 @@ int validsEmployees (Employee vec[], int tam)
 
     return flagCargado;
 }
-
+/** \brief reports based on salaries and averages.
+ *
+ * \param list Employee []
+ * \param tam int
+ * \return
+ *
+ */
 void totalEmployees(Employee vec[], int tam)
 {
     int contadorEmpleados = 0;
@@ -386,6 +452,7 @@ void totalEmployees(Employee vec[], int tam)
         {
             if (vec[i].salary >= promedio)
             {
+                printf("Empleades que superan el sueldo promedio: \n");
                 showEmployee(vec[i]);
             }
         }

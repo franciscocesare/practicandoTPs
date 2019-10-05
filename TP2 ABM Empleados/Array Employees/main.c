@@ -5,29 +5,12 @@
 #include "conio.h"
 #include "ctype.h"
 
-#define TAM 4
-/*
--HACER ULTIMO PUNTO DE INFORMES
--ORDENAR UN POCO LOS PRINT QUE ESTAN DESFAZADOS
--DEFINIR EL TAM EN 1000
--BORRAR LOS HARDCODEADOS
-*/
+#define TAM 1000
+
 
 int main()
 {
     Employee lista[TAM];
-    /*=
-    {
-        {1121, "juan", "perez", 30000, 2,0},
-        {1431, "pepe", "gutierrez", 35000, 3,0},
-        {1317, "alberto", "gerez", 20000, 4,0},
-        {1521, "roque", "zalar", 27000, 1,0},
-
-
-    };*/
-
-
-
     char salir = 'n';
     int idEmployee=1;
 
