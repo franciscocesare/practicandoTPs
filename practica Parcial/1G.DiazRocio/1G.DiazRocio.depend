@@ -1,0 +1,149 @@
+# depslib dependency file v1.0
+1570410442 source:e:\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1570494860 source:e:\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1570410442 e:\1g.diazrocio\inputdiaz.h
+
+1570487018 e:\1g.diazrocio\categoria.h
+
+1570485262 source:e:\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1570493766 source:e:\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1570488864 e:\1g.diazrocio\juego.h
+	"categoria.h"
+
+1570491624 source:e:\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1570491502 e:\1g.diazrocio\clientes.h
+
+1570492010 source:e:\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1570491916 e:\1g.diazrocio\alquileres.h
+
+1570494860 source:e:\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1570494860 e:\1g.diazrocio\informes.h
+
+1571606758 source:c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1571433700 c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\inputdiaz.h
+
+1571433700 c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\categoria.h
+
+1571433700 c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\juego.h
+	"categoria.h"
+
+1571433700 c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\clientes.h
+
+1571433700 c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\alquileres.h
+
+1571609570 source:c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1571433700 source:c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1571433700 source:c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1571433700 c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\informes.h
+
+1571433700 source:c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1571433700 source:c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1571611024 source:c:\users\usuario\desktop\practicas programacionrocio\practicas parciales\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
