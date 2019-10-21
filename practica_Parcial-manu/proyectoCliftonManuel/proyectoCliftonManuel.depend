@@ -1,0 +1,265 @@
+# depslib dependency file v1.0
+1570491731 source:d:\proyectocliftonmanuel\biblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"biblioteca.h"
+
+1570396714 d:\proyectocliftonmanuel\biblioteca.h
+
+1570495145 source:d:\proyectocliftonmanuel\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"biblioteca.h"
+
+1570486307 source:c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\biblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"biblioteca.h"
+
+1570486307 c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\biblioteca.h
+
+1570624523 source:c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"biblioteca.h"
+	"alquiler.h"
+	"categoria.h"
+	"cliente.h"
+	"juego.h"
+	"fecha.h"
+
+1570526058 source:c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\fecha.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"fecha.h"
+
+1570526058 c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\fecha.h
+
+1570581811 source:c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\alquiler.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"alquiler.h"
+	"biblioteca.h"
+
+1570526384 c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\alquiler.h
+	"fecha.h"
+	"juego.h"
+	"categoria.h"
+	"cliente.h"
+
+1570526384 c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\juego.h
+	"categoria.h"
+
+1570526384 c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\categoria.h
+
+1570526384 c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\cliente.h
+
+1570526384 source:c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"categoria.h"
+
+1570526384 source:c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"cliente.h"
+	"biblioteca.h"
+
+1570526058 source:c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"juego.h"
+
+1570526530 source:c:\users\manu_\desktop\practica_parcial\proyectocliftonmanuel\informes.c
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\alquiler.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"alquiler.h"
+	"biblioteca.h"
+
+1570606592 c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\alquiler.h
+	"fecha.h"
+	"juego.h"
+	"categoria.h"
+	"cliente.h"
+
+1570606592 c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\fecha.h
+
+1570606592 c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\juego.h
+	"categoria.h"
+
+1570606592 c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\categoria.h
+
+1570606592 c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\cliente.h
+
+1570606592 c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\biblioteca.h
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\biblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"biblioteca.h"
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"categoria.h"
+
+1571025313 source:c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"cliente.h"
+	"biblioteca.h"
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\fecha.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"fecha.h"
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\informes.c
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"juego.h"
+
+1571025313 source:c:\users\usuario\desktop\practica_parcial-master\proyectocliftonmanuel\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"biblioteca.h"
+	"alquiler.h"
+	"categoria.h"
+	"cliente.h"
+	"juego.h"
+	"fecha.h"
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\alquiler.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"alquiler.h"
+	"biblioteca.h"
+
+1570606592 c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\alquiler.h
+	"fecha.h"
+	"juego.h"
+	"categoria.h"
+	"cliente.h"
+
+1570606592 c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\fecha.h
+
+1570606592 c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\juego.h
+	"categoria.h"
+
+1570606592 c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\categoria.h
+
+1570606592 c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\cliente.h
+
+1570606592 c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\biblioteca.h
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\biblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"biblioteca.h"
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"categoria.h"
+
+1571025313 source:c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"cliente.h"
+	"biblioteca.h"
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\fecha.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"fecha.h"
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\informes.c
+
+1570606592 source:c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"juego.h"
+
+1571025313 source:c:\users\usuario\desktop\practica_parcial-manu\proyectocliftonmanuel\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"biblioteca.h"
+	"alquiler.h"
+	"categoria.h"
+	"cliente.h"
+	"juego.h"
+	"fecha.h"
+

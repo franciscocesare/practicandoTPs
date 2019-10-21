@@ -1,0 +1,75 @@
+# depslib dependency file v1.0
+1570497117 source:c:\users\usuario\desktop\clases\practica1erparcial\estebanmato\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1570646919 source:c:\users\esteban\desktop\esteban\clases\practica1erparcial\estebanmato\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cliente.h"
+	"validaciones.h"
+	"alquileres.h"
+
+1570639251 c:\users\esteban\desktop\esteban\clases\practica1erparcial\estebanmato\cliente.h
+
+1570639305 c:\users\esteban\desktop\esteban\clases\practica1erparcial\estebanmato\validaciones.h
+	"alquileres.h"
+
+1570639305 c:\users\esteban\desktop\esteban\clases\practica1erparcial\estebanmato\alquileres.h
+	"cliente.h"
+
+1570639475 source:c:\users\esteban\desktop\esteban\clases\practica1erparcial\estebanmato\validaciones.c
+	"validaciones.h"
+	<stdlib.h>
+	<string.h>
+
+1570646304 source:c:\users\esteban\desktop\esteban\clases\practica1erparcial\estebanmato\alquileres.c
+	"alquileres.h"
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1570639475 source:c:\users\esteban\desktop\esteban\clases\practica1erparcial\estebanmato\cliente.c
+	"cliente.h"
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1571264902 source:c:\users\usuario\desktop\parcial1-esteban\estebanmato\alquileres.c
+	"alquileres.h"
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1571264902 c:\users\usuario\desktop\parcial1-esteban\estebanmato\alquileres.h
+	"cliente.h"
+
+1571264902 c:\users\usuario\desktop\parcial1-esteban\estebanmato\cliente.h
+
+1571264902 c:\users\usuario\desktop\parcial1-esteban\estebanmato\validaciones.h
+	"alquileres.h"
+
+1571264902 source:c:\users\usuario\desktop\parcial1-esteban\estebanmato\cliente.c
+	"cliente.h"
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1571264902 source:c:\users\usuario\desktop\parcial1-esteban\estebanmato\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cliente.h"
+	"validaciones.h"
+	"alquileres.h"
+
+1571264902 source:c:\users\usuario\desktop\parcial1-esteban\estebanmato\validaciones.c
+	"validaciones.h"
+	<stdlib.h>
+	<string.h>
+

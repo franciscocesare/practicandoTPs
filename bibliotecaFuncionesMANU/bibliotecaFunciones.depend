@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1568082068 source:c:\users\manu_\desktop\bibliotecafunciones\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"Funciones.h"
+
+1568082068 c:\users\manu_\desktop\bibliotecafunciones\funciones.h
+
+1568083756 source:c:\users\manu_\desktop\bibliotecafunciones\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	"Funciones.h"
+
+1568411200 source:c:\users\alumno\desktop\programacionuno\bibliotecafunciones\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"Funciones.h"
+
+1568411200 c:\users\alumno\desktop\programacionuno\bibliotecafunciones\funciones.h
+
+1568421015 source:c:\users\alumno\desktop\programacionuno\bibliotecafunciones\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Funciones.h"
+
+1568682007 source:c:\users\manu_\desktop\programacionuno\bibliotecafunciones\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Funciones.h"
+
+1568682034 c:\users\manu_\desktop\programacionuno\bibliotecafunciones\funciones.h
+
+1568682055 source:c:\users\manu_\desktop\programacionuno\bibliotecafunciones\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"Funciones.h"
+
