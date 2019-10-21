@@ -124,7 +124,7 @@ int main()
     inicializarAlquileres(alquiler, TAMAlquiler);
 
     idAlquiler+=hardCodearAlquileres(alquiler, TAMAlquiler, 5);
-    idCliente += hardcodearClientes(lista, TAMClientes, 8);
+    idCliente += hardcodearClientes(lista, TAMClientes, 5);
 
     harcodearJuego(juegos, TAMJuegos);
     hardcodearCategoria(categorias, TAMCategoria);
@@ -293,16 +293,16 @@ int hardcodearClientes( eCliente vec[], int tam, int cantidad)
 
     eCliente aux[]=
     {
-        {1,   "JUAN", "GARAY", 'M', "1160313333", "Av San Juan 284"},
-        {2,   "ROBERTO", "LARALALA", 'M', "1150315433", "San Lorenzo 351"},
-        {3,   "ROMINA", "LESCANO", 'F', "1167413333", "Av San Jose 3617"},
-        {4,   "PABLO", "PEREZ", 'M', "1140313953", "Corrientes 450"},
-        {5,   "JIMENA", "GUTIERREZ", 'F', "1174314125", "9 de Julio 5000"},
-        {6,   "NORMA", "ARIAS", 'F', "1161314569", "Santa Fe 3500"},
-        {7,   "LUIS", "ARRIETA", 'M', "1165213458", "Av Medrano 2105"},
-        {8,   "SILVIA", "LUGUERCIO", 'F', "1152313336", "Av San Juan 865"},
-        {9,   "ANIBAL", "MONTE", 'M', "1160357896", "Libertad 65"},
-        {10,   "DANIELA", "ERGO", 'F', "1121513612", "Av BraSil 444"},
+        {1,   "JUAN", "GARAY", 'M', "1160313333", "Av San Juan 284",0},
+        {2,   "ROBERTO", "LARALALA", 'M', "1150315433", "San Lorenzo 351",0},
+        {3,   "ROMINA", "LESCANO", 'F', "1167413333", "Av San Jose 3617",0},
+        {4,   "PABLO", "PEREZ", 'M', "1140313953", "Corrientes 450",0},
+        {5,   "JIMENA", "GUTIERREZ", 'F', "1174314125", "9 de Julio 5000",0},
+        {6,   "NORMA", "ARIAS", 'F', "1161314569", "Santa Fe 3500",0},
+        {7,   "LUIS", "ARRIETA", 'M', "1165213458", "Av Medrano 2105",0},
+        {8,   "SILVIA", "LUGUERCIO", 'F', "1152313336", "Av San Juan 865",0},
+        {9,   "ANIBAL", "MONTE", 'M', "1160357896", "Libertad 65",0},
+        {10,   "DANIELA", "ERGO", 'F', "1121513612", "Av BraSil 444",0},
 
     };
 
@@ -650,15 +650,15 @@ int hardCodearAlquileres(eAlquileres vec [], int tam, int cantidad)
 
     eAlquileres aux[]=
     {
-        {1,100,5,1,{15,12,2019}},
-        {3,102,7,1,{5,1,2019},},
-        {2,104,8,1,{12,11,2019},},
-        {4,103,6,1,{6,8,2019},},
-        {5,102,9,1,{22,5,2019},}
+        {1,100,5,0,{15,12,2019}},
+        {3,102,7,0,{5,1,2019},},
+        {2,104,8,0,{12,11,2019},},
+        {4,103,6,0,{6,8,2019},},
+        {5,102,9,0,{22,5,2019},}
 
     };
 
-    if( cantidad <= 10 && tam >= cantidad)
+    if( cantidad <= 5 && tam >= cantidad)
     {
         for(int i=0; i < cantidad; i++)
         {
@@ -709,7 +709,7 @@ void mostrarAlquileres(eAlquileres vec[], int tam, eJuego juegos[], int tamJ, eC
 
     for(int i=0; i<tam; i++)
     {
-        if(vec[i].isEmptyAlquiler==1)
+        if(vec[i].isEmptyAlquiler==0)
         {
             mostrarAlquiler(vec[i],juegos,tamJ,lista,tamC);
             cont++;
