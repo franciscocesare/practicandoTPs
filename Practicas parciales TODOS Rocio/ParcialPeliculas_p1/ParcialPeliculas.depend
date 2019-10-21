@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1570067278 source:c:\users\rocio\desktop\parcialpeliculas\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1570067975 source:c:\users\rocio\desktop\parcialpeliculas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"peliculas.h"
+	"generosActores.h"
+
+1569989862 c:\users\rocio\desktop\parcialpeliculas\inputdiaz.h
+
+1570068180 source:c:\users\rocio\desktop\parcialpeliculas\generosactores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"generosActores.h"
+	"peliculas.h"
+
+1570068254 c:\users\rocio\desktop\parcialpeliculas\generosactores.h
+
+1570068273 c:\users\rocio\desktop\parcialpeliculas\peliculas.h
+	"generosActores.h"
+
+1570068180 source:c:\users\rocio\desktop\parcialpeliculas\peliculas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"generosActores.h"
+	"peliculas.h"
+
+1570306427 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialpeliculas_p1\generosactores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"generosActores.h"
+	"peliculas.h"
+
+1570306427 c:\users\rocio\desktop\programacion-1\practicas parciales\parcialpeliculas_p1\inputdiaz.h
+
+1570306427 c:\users\rocio\desktop\programacion-1\practicas parciales\parcialpeliculas_p1\generosactores.h
+
+1570306428 c:\users\rocio\desktop\programacion-1\practicas parciales\parcialpeliculas_p1\peliculas.h
+	"generosActores.h"
+
+1570306427 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialpeliculas_p1\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1570310027 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialpeliculas_p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"peliculas.h"
+	"generosActores.h"
+
+1570306428 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialpeliculas_p1\peliculas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"generosActores.h"
+	"peliculas.h"
+

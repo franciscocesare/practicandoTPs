@@ -1,0 +1,131 @@
+# depslib dependency file v1.0
+1570422290 source:c:\users\rocio\desktop\practicaempleado_p1\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1570425992 source:c:\users\rocio\desktop\practicaempleado_p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+
+1570422330 c:\users\rocio\desktop\practicaempleado_p1\inputdiaz.h
+
+1570425257 c:\users\rocio\desktop\practicaempleado_p1\empleados.h
+	"sectores.h"
+
+1570425258 source:c:\users\rocio\desktop\practicaempleado_p1\empleados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+
+1570419538 c:\users\rocio\desktop\practicaempleado_p1\sectores.h
+
+1570419807 source:c:\users\rocio\desktop\practicaempleado_p1\sectores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sectores.h"
+
+1570420503 source:c:\users\rocio\desktop\practicaempleado_p1\menus.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menus.h"
+
+1570420449 c:\users\rocio\desktop\practicaempleado_p1\menus.h
+
+1570425641 c:\users\rocio\desktop\practicaempleado_p1\almuerzos.h
+	"empleados.h"
+
+1570426151 source:c:\users\rocio\desktop\practicaempleado_p1\almuerzos.c
+	<stdio.h>
+	<stdlib.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+
+1570426151 source:c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\almuerzos.c
+	<stdio.h>
+	<stdlib.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+
+1570422330 c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\inputdiaz.h
+
+1570425257 c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\empleados.h
+	"sectores.h"
+
+1570419538 c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\sectores.h
+
+1570420449 c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\menus.h
+
+1570425641 c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\almuerzos.h
+	"empleados.h"
+
+1570426251 source:c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\empleados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+
+1570422290 source:c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1570420503 source:c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\menus.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menus.h"
+
+1570419807 source:c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\sectores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sectores.h"
+
+1571623893 source:c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+	"informes.h"
+
+1571624465 source:c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\informes.c
+	<stdio.h>
+	<stdlib.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+
+1571622725 c:\users\rocio\desktop\programacion-1\practicas parciales\practicaempleado_p1\informes.h
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+

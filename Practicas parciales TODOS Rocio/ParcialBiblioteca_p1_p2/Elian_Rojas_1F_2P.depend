@@ -1,0 +1,161 @@
+# depslib dependency file v1.0
+1557981712 source:f:\c\c proyectos\elian_rojas_1f_1p\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"inputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1557973674 f:\c\c proyectos\elian_rojas_1f_1p\inputelian.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1557988052 source:f:\c\c proyectos\elian_rojas_1f_1p\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+	<ctype.h>
+	"libros.h"
+
+1557987870 f:\c\c proyectos\elian_rojas_1f_1p\libros.h
+	<stdio.h>
+	<stdlib.h>
+	"inputElian.h"
+
+1557987870 source:f:\c\c proyectos\elian_rojas_1f_1p\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"libros.h"
+	"inputElian.h"
+
+1557981712 source:f:\c\c proyectos\abm examen bien hecho\primera parte\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"inputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1557973674 f:\c\c proyectos\abm examen bien hecho\primera parte\inputelian.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1557988248 source:f:\c\c proyectos\abm examen bien hecho\primera parte\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+	<ctype.h>
+	"libros.h"
+
+1557987870 f:\c\c proyectos\abm examen bien hecho\primera parte\libros.h
+	<stdio.h>
+	<stdlib.h>
+	"inputElian.h"
+
+1558071266 source:f:\c\c proyectos\abm examen bien hecho\primera parte\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"libros.h"
+	"inputElian.h"
+
+1558349674 source:f:\c\c proyectos\abm examen bien hecho\segunda parte\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"inputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1557973674 f:\c\c proyectos\abm examen bien hecho\segunda parte\inputelian.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1558968928 source:f:\c\c proyectos\abm examen bien hecho\segunda parte\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+	<ctype.h>
+	"libros.h"
+
+1558968336 f:\c\c proyectos\abm examen bien hecho\segunda parte\libros.h
+	<stdio.h>
+	<stdlib.h>
+	"inputElian.h"
+
+1558968552 source:f:\c\c proyectos\abm examen bien hecho\segunda parte\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"libros.h"
+	"inputElian.h"
+
+1559936992 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"inputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1559940004 e:\c\c proyectos\abm examen bien hecho\segunda parte\inputelian.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1561358598 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+	<ctype.h>
+	"libros.h"
+
+1560769870 e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.h
+	<stdio.h>
+	<stdlib.h>
+	"inputElian.h"
+
+1560108018 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"libros.h"
+	"inputElian.h"
+
