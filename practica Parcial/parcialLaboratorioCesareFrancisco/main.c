@@ -5,7 +5,7 @@
 #include <ctype.h>
 
 #define TAMClientes 10
-#define TAMAlquiler 10
+#define TAMAlquiler 7
 #define TAMJuegos 6
 #define TAMCategoria 5
 
@@ -23,10 +23,8 @@ typedef struct
 {
     int idJuego;
     char descripcion[20];
-    ///char sexo;
     float importe;
     int idCategoria;
-    ///int isEmpty;
 } eJuego;
 
 typedef struct
@@ -52,8 +50,8 @@ typedef struct
     int idAlquiler; ///autoincremental
     int idJuego; ///validar
     int idCliente; ///validar
-    int isEmptyAlquiler;
     eFecha fechaAlquiler;
+    int isEmptyAlquiler;
 
 } eAlquileres;
 
@@ -82,7 +80,7 @@ void obtenerNomCliente(eCliente vec[], int tam, int id, char dondeAsigar[]);
 ///prototipos Alquileres
 
 void inicializarAlquileres(eAlquileres vec[], int tam);
-int hardCodearAlquileres(eAlquileres vec[], int tam, int cantidad);
+int hardcodearAlquileres(eAlquileres vec[], int tam, int cant);
 int findFreeAlquiler(eAlquileres vec[], int tam);
 int altaAlquiler(eAlquileres vec[], int tam, eJuego juego[], int tamJ, eCliente cliente[], int tamC,eCategoria cat[], int tCat, int id);
 void mostrarAlquiler(eAlquileres vec, eJuego juego[], int tamJ, eCliente cliente[], int tamC);
@@ -111,8 +109,8 @@ void mostrarJuegos(eJuego juego[],int tamJ, eCategoria categoria[], int tamC);
 int main()
 {
     ///int idCategoria = 0;
-    int idCliente = 0;
-    int idAlquiler=0;
+    int idCliente = 1000;
+    int idAlquiler=1;
     char salir = 'n';
 
     eCliente lista [TAMClientes];
@@ -123,7 +121,7 @@ int main()
     inicializarClientes(lista, TAMClientes);
     inicializarAlquileres(alquiler, TAMAlquiler);
 
-    idAlquiler+=hardCodearAlquileres(alquiler, TAMAlquiler, 5);
+    idAlquiler+=hardcodearAlquileres(alquiler, TAMAlquiler, 5);
     idCliente += hardcodearClientes(lista, TAMClientes, 5);
 
     harcodearJuego(juegos, TAMJuegos);
@@ -182,7 +180,7 @@ int main()
 
                 if (altaAlquiler(alquiler, TAMAlquiler, juegos, TAMJuegos, lista, TAMClientes, categorias, TAMCategoria, idAlquiler))
                 {
-                   idAlquiler++;
+                    idAlquiler++;
                 }
 
                 system("pause");
@@ -197,12 +195,13 @@ int main()
             case 3:
                 printf("Volver al menu anterior\n");
                 system("pause")
-;                break;
+                ;
+                break;
 
-            /*default:
-                printf("\nOpcion Invalida!\n\n");
-                system("pause");
-*/
+                /*default:
+                    printf("\nOpcion Invalida!\n\n");
+                    system("pause");
+                */
             }
             break;
 
@@ -293,16 +292,16 @@ int hardcodearClientes( eCliente vec[], int tam, int cantidad)
 
     eCliente aux[]=
     {
-        {1,   "JUAN", "GARAY", 'M', "1160313333", "Av San Juan 284",0},
-        {2,   "ROBERTO", "LARALALA", 'M', "1150315433", "San Lorenzo 351",0},
-        {3,   "ROMINA", "LESCANO", 'F', "1167413333", "Av San Jose 3617",0},
-        {4,   "PABLO", "PEREZ", 'M', "1140313953", "Corrientes 450",0},
-        {5,   "JIMENA", "GUTIERREZ", 'F', "1174314125", "9 de Julio 5000",0},
-        {6,   "NORMA", "ARIAS", 'F', "1161314569", "Santa Fe 3500",0},
-        {7,   "LUIS", "ARRIETA", 'M', "1165213458", "Av Medrano 2105",0},
-        {8,   "SILVIA", "LUGUERCIO", 'F', "1152313336", "Av San Juan 865",0},
-        {9,   "ANIBAL", "MONTE", 'M', "1160357896", "Libertad 65",0},
-        {10,   "DANIELA", "ERGO", 'F', "1121513612", "Av BraSil 444",0},
+        {1000,   "JUAN", "GARAY", 'M', "1160313333", "Av San Juan 284",0},
+        {1001,   "ROBERTO", "LARALALA", 'M', "1150315433", "San Lorenzo 351",0},
+        {1002,   "ROMINA", "LESCANO", 'F', "1167413333", "Av San Jose 3617",0},
+        {1003,   "PABLO", "PEREZ", 'M', "1140313953", "Corrientes 450",0},
+        {1004,   "JIMENA", "GUTIERREZ", 'F', "1174314125", "9 de Julio 5000",0},
+        {1005,   "NORMA", "ARIAS", 'F', "1161314569", "Santa Fe 3500",0},
+        {1006,   "LUIS", "ARRIETA", 'M', "1165213458", "Av Medrano 2105",0},
+        {1007,   "SILVIA", "LUGUERCIO", 'F', "1152313336", "Av San Juan 865",0},
+        {1008,   "ANIBAL", "MONTE", 'M', "1160357896", "Libertad 65",0},
+        {1009,   "DANIELA", "ERGO", 'F', "1121513612", "Av BraSil 444",0},
 
     };
 
@@ -473,8 +472,10 @@ int borrarCliente(eCliente vec[], int tam)
     int id;
     int index;
     char confirma;
-    system("cls");
     printf("***** Baja Cliente *****\n\n");
+
+    mostrarClientes(vec, tam);
+
     printf("Ingrese id: ");
     scanf("%d", &id);
 
@@ -515,7 +516,9 @@ int modificarCliente(eCliente vec[], int tam)
     int id;
     int index;
     system("cls");
-    printf("\n***** Modificar Cliente *****\n\n");
+    printf("\n***** MODIFICAR DATOS DE CLIENTES *****\n\n");
+    mostrarClientes(vec, tam);
+
     printf("Ingrese id del cliente: ");
     scanf("%d", &id);
     int opcion;
@@ -643,22 +646,22 @@ void inicializarAlquileres(eAlquileres vec[], int tam)
     }
 }
 
-int hardCodearAlquileres(eAlquileres vec [], int tam, int cantidad)
+/*int hardCodearAlquileres(eAlquileres vec [], int tam, int cantidad)
 {
 
-        int cont = 0;
+    int cont = 0;
 
     eAlquileres aux[]=
     {
-        {1,100,5,0,{15,12,2019}},
-        {3,102,7,0,{5,1,2019},},
-        {2,104,8,0,{12,11,2019},},
-        {4,103,6,0,{6,8,2019},},
-        {5,102,9,0,{22,5,2019},}
+        {1,100,1003,{15,12,2019},0},
+        {3,102,1002,{5,1,2019},0},
+        {2,104,1001,{12,11,2019},0},
+        {4,103,1006,{6,8,2019},0},
+        {5,102,1007,{22,5,2019},0}
 
     };
 
-    if( cantidad <= 5 && tam >= cantidad)
+    if( cantidad <= tam && tam >= cantidad)
     {
         for(int i=0; i < cantidad; i++)
         {
@@ -666,6 +669,32 @@ int hardCodearAlquileres(eAlquileres vec [], int tam, int cantidad)
             cont++;
         }
     }
+
+    return cont;
+}*/
+
+int hardcodearAlquileres(eAlquileres vec[], int tam, int cant)
+{
+    int cont=0;
+    eAlquileres alquileres[]=
+    {
+        {1,100,1001,{12,5,2019},0},
+        {2,103,1002,{35,6,2019},0},
+        {3,100,1003,{22,12,2019},0},
+        {4,101,1004,{6,8,2019},0},
+        {5,102,1005,{9,4,2019},0},
+        {6,103,1006,{16,10,2019},0}
+
+    };
+
+   if(cant<= tam && cant<=6)
+   {
+       for(int i=0; i<tam; i++)
+        {
+        vec[i]=alquileres[i];
+        cont++;
+        }
+   }
 
     return cont;
 }
@@ -706,6 +735,8 @@ void mostrarAlquileres(eAlquileres vec[], int tam, eJuego juegos[], int tamJ, eC
 
     system("cls");
     printf("  ID Alq JUEGO        CLIENTE           FECHA_ALQUILER\n\n");
+
+
 
     for(int i=0; i<tam; i++)
     {
@@ -795,21 +826,22 @@ void obtenerNomJuego(eJuego vec[], int tam, int id, char dondeAsignar[])
 
 void mostrarJuego(eJuego juegos, eCategoria categorias[], int tam)
 {
-   char nombre[21];
+    char nombre[21];
 
-   obtenerNomCat(categorias, tam, juegos.idCategoria,nombre);
+    obtenerNomCat(categorias, tam, juegos.idCategoria,nombre);
 
-   printf("%d    %8s    %.2f    %10s\n",juegos.idJuego,juegos.descripcion,
-          juegos.importe,nombre);
+    printf("%d    %8s    %.2f    %10s\n",juegos.idJuego,juegos.descripcion,
+           juegos.importe,nombre);
 }
 
 
-void mostrarJuegos(eJuego juego[],int tamJ, eCategoria categoria[], int tamC){
+void mostrarJuegos(eJuego juego[],int tamJ, eCategoria categoria[], int tamC)
+{
 
     system("cls");
     printf(" ID    DESCRIPCION     IMPORTE   CATEGORIA\n\n");
 
-    for(int i=0 ;i<tamJ; i++)
+    for(int i=0 ; i<tamJ; i++)
     {
         mostrarJuego(juego[i],categoria,tamC);
     }
@@ -818,19 +850,23 @@ void mostrarJuegos(eJuego juego[],int tamJ, eCategoria categoria[], int tamC){
 
 
 ///CATEGORIAS
-void mostrarCategoria(eCategoria categorias){
+void mostrarCategoria(eCategoria categorias)
+{
 
     printf(" %d     %s  \n", categorias.idCategoria, categorias.descripcion);
 }
 
-void mostrarCategorias(eCategoria categorias[], int tamCat){
+void mostrarCategorias(eCategoria categorias[], int tamCat)
+{
     int cont = 0;
     printf("  ID     DESCRIPCION\n");
-    for(int i=0; i<tamCat; i++){
+    for(int i=0; i<tamCat; i++)
+    {
         mostrarCategoria(categorias[i]);
         cont++;
     }
-    if(!cont){
+    if(!cont)
+    {
         printf("NO HAY CATEGORIAS QUE MOSTRAR\n\n");
     }
 }
@@ -838,7 +874,7 @@ void mostrarCategorias(eCategoria categorias[], int tamCat){
 void hardcodearCategoria(eCategoria vec[], int tam)
 {
 
-   eCategoria categorias[] =
+    eCategoria categorias[] =
     {
         {1, "MESA"},
         {2, "AZAR"},
@@ -848,7 +884,7 @@ void hardcodearCategoria(eCategoria vec[], int tam)
 
     };
 
-    for(int i=0 ;i<tam; i++)
+    for(int i=0 ; i<tam; i++)
     {
         vec[i] = categorias[i];
     }
@@ -857,7 +893,7 @@ void hardcodearCategoria(eCategoria vec[], int tam)
 
 void obtenerNomCat(eCategoria vec[], int tam, int id, char dondeAsignar[])
 {
-    for(int i=0 ;i<tam; i++)
+    for(int i=0 ; i<tam; i++)
     {
         if(vec[i].idCategoria == id)
         {
@@ -896,7 +932,7 @@ void getIntRange(int* dondeAsignar, int min, int max, char* mensaje)
     while(auxInt < min || auxInt > max)
     {
         printf("Error. %s",mensaje);
-          fflush(stdin);
+        fflush(stdin);
         scanf("%d",&auxInt);
     }
 
