@@ -5,7 +5,7 @@
 #include <ctype.h>
 
 #define TAMClientes 10
-#define TAMAlquiler 5
+#define TAMAlquiler 10
 #define TAMJuegos 6
 #define TAMCategoria 5
 
@@ -24,7 +24,7 @@ typedef struct
     int idJuego;
     char descripcion[20];
     ///char sexo;
-    int importe;
+    float importe;
     int idCategoria;
     ///int isEmpty;
 } eJuego;
@@ -102,7 +102,7 @@ void hardcodearCategoria(eCategoria vec[], int tam);
 void harcodearJuego(eJuego vec[], int tam);
 void obtenerNomJuego(eJuego vec[], int tam, int id, char dondeAsignar[]);
 void mostrarJuego(eJuego juegos, eCategoria categorias[], int tam);
-void mostrarJuegos(eJuego juegos[],int tamJ, eCategoria categorias[], int tamC);
+void mostrarJuegos(eJuego juego[],int tamJ, eCategoria categoria[], int tamC);
 
 
 
@@ -124,7 +124,7 @@ int main()
     inicializarAlquileres(alquiler, TAMAlquiler);
 
     idAlquiler+=hardCodearAlquileres(alquiler, TAMAlquiler, 5);
-    idCliente += hardcodearClientes(lista, TAMClientes, 10);
+    idCliente += hardcodearClientes(lista, TAMClientes, 8);
 
     harcodearJuego(juegos, TAMJuegos);
     hardcodearCategoria(categorias, TAMCategoria);
@@ -180,12 +180,10 @@ int main()
             {
             case 1:
 
-                /*if (altaAlquiler(alquiler, TAMAlquiler, juegos, TAMJuegos, lista, TAMClientes, categorias, TAMCategoria, idAlquiler))
+                if (altaAlquiler(alquiler, TAMAlquiler, juegos, TAMJuegos, lista, TAMClientes, categorias, TAMCategoria, idAlquiler))
                 {
                    idAlquiler++;
-                }*/
-                ///mostrarCategorias(categorias, TAMCategoria);
-                mostrarJuegos(juegos, TAMJuegos,categorias, TAMClientes);
+                }
 
                 system("pause");
 
@@ -698,7 +696,7 @@ void mostrarAlquiler(eAlquileres vec, eJuego juegos[], int tamJ, eCliente lista[
     obtenerNomJuego(juegos,tamJ,vec.idJuego,nomjuego);
     obtenerNomCliente(lista,tamC,vec.idCliente,nomCliente);
 
-    printf(" %d  %10s  %20s       %02d/%02d/%d\n",vec.idAlquiler,nomjuego,nomCliente,
+    printf(" %d  %8s  %20s       %02d/%02d/%d\n",vec.idAlquiler,nomjuego,nomCliente,
            vec.fechaAlquiler.dia,vec.fechaAlquiler.mes,vec.fechaAlquiler.anio);
 }
 
@@ -707,7 +705,7 @@ void mostrarAlquileres(eAlquileres vec[], int tam, eJuego juegos[], int tamJ, eC
     int cont=0;
 
     system("cls");
-    printf("  ID         JUEGO               CLIENTE           FECHA_ALQUILER\n\n");
+    printf("  ID Alq JUEGO        CLIENTE           FECHA_ALQUILER\n\n");
 
     for(int i=0; i<tam; i++)
     {
@@ -768,7 +766,7 @@ void harcodearJuego(eJuego vec[], int tam)
     eJuego lista[]=
     {
         {100, "TEG",200, 3},
-        {101, "CARRERA DE MENTES",250, 1},
+        {101, "DAMAS",250, 1},
         {102, "METEGOL",500, 4},
         {103, "AJEDRES",150, 1},
         {104, "RULETA",250, 2},
@@ -801,19 +799,19 @@ void mostrarJuego(eJuego juegos, eCategoria categorias[], int tam)
 
    obtenerNomCat(categorias, tam, juegos.idCategoria,nombre);
 
-   printf("%d    %10s    %.2f    %10s\n",juegos.idJuego,juegos.descripcion,
+   printf("%d    %8s    %.2f    %10s\n",juegos.idJuego,juegos.descripcion,
           juegos.importe,nombre);
 }
 
 
-void mostrarJuegos(eJuego juegos[],int tamJ, eCategoria categorias[], int tamC){
+void mostrarJuegos(eJuego juego[],int tamJ, eCategoria categoria[], int tamC){
 
     system("cls");
-    printf(" ID    DESCRIPCION     IMPORTE     CATEGORIA\n\n");
+    printf(" ID    DESCRIPCION     IMPORTE   CATEGORIA\n\n");
 
     for(int i=0 ;i<tamJ; i++)
     {
-        mostrarJuego(juegos[i],categorias,tamC);
+        mostrarJuego(juego[i],categoria,tamC);
     }
 }
 
