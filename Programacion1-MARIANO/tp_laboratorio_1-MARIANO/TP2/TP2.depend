@@ -1,0 +1,98 @@
+# depslib dependency file v1.0
+1557118759 source:c:\users\compa\desktop\tp2\funcionesempleados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funcionesEmpleados.h"
+	"funcionesGenerales.h"
+	"utn.h"
+
+1557116078 c:\users\compa\desktop\tp2\funcionesempleados.h
+
+1557454998 c:\users\compa\desktop\tp2\funcionesgenerales.h
+
+1557454370 c:\users\compa\desktop\tp2\utn.h
+
+1557454460 source:c:\users\compa\desktop\tp2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"funcionesGenerales.h"
+	"utn.h"
+
+1557454998 source:c:\users\compa\desktop\tp2\funcionesgenerales.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"funcionesGenerales.h"
+	"utn.h"
+
+1557453435 source:c:\users\compa\desktop\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"funcionesGenerales.h"
+	"utn.h"
+
+1557453435 c:\users\compa\desktop\tp2\arrayemployees.h
+
+1557454871 source:c:\users\compa\desktop\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"funcionesGenerales.h"
+	"utn.h"
+
+1557455228 source:c:\users\compa\desktop\utn\labo i\tp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"funcionesGenerales.h"
+	"utn.h"
+
+1557453435 c:\users\compa\desktop\utn\labo i\tp2\arrayemployees.h
+
+1557454998 c:\users\compa\desktop\utn\labo i\tp2\funcionesgenerales.h
+
+1557454370 c:\users\compa\desktop\utn\labo i\tp2\utn.h
+
+1557454998 source:c:\users\compa\desktop\utn\labo i\tp2\funcionesgenerales.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"funcionesGenerales.h"
+	"utn.h"
+
+1557453435 source:c:\users\compa\desktop\utn\labo i\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"funcionesGenerales.h"
+	"utn.h"
+
+1557454460 source:c:\users\compa\desktop\utn\labo i\tp2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"funcionesGenerales.h"
+	"utn.h"
+

@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1554228410 source:c:\users\compa\desktop\nueva carpeta (2)\tp1\funcionescalculadora.c
+
+1554331468 source:c:\users\compa\desktop\nueva carpeta (2)\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcionesCalculadora.h"
+
+1554228444 c:\users\compa\desktop\nueva carpeta (2)\tp1\funcionescalculadora.h
+
+1554492921 source:c:\users\administrador\desktop\tp_laboratorio_1-master\tp1\funcionescalculadora.c
+
+1554405702 source:c:\users\administrador\desktop\tp_laboratorio_1-master\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcionesCalculadora.h"
+
+1554405702 c:\users\administrador\desktop\tp_laboratorio_1-master\tp1\funcionescalculadora.h
+

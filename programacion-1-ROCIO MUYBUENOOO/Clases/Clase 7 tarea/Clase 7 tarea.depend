@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1568500521 source:c:\users\rocio\desktop\clase 7 tarea\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1568674364 source:c:\users\alumno\desktop\programacion-1\clases recursada\clase 7 tarea\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1569719020 source:c:\users\rocio\desktop\programacion-1\clases recursada\clase 7 tarea\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+

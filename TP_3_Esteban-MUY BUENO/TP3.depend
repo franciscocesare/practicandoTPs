@@ -1,0 +1,290 @@
+# depslib dependency file v1.0
+1533062952 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/Employee.c
+
+1533063050 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1532354323 /home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/LinkedList.h
+
+1533062926 /home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/Employee.h
+
+1533063080 source:/home/mauro/Descargas/Practica_Pair_v1.2/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533062952 source:/home/mauro/Descargas/TP3/Linux_64/Employee.c
+
+1533066103 source:/home/mauro/Descargas/TP3/Linux_64/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1532354323 /home/mauro/Descargas/TP3/Linux_64/LinkedList.h
+
+1533066103 /home/mauro/Descargas/TP3/Linux_64/Employee.h
+
+1533063080 source:/home/mauro/Descargas/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533145792 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1533118898 /home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/LinkedList.h
+
+1533118898 /home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Employee.h
+
+1533118898 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/Employee.c
+
+1533145890 source:/home/mauro/Descargas/TP3-20180801T173619Z-001/TP3/Linux_64/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1572913830 source:d:\esteban mato\labo-progra-1\tp_laboratorio_1\tp_3\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1572906714 d:\esteban mato\labo-progra-1\tp_laboratorio_1\tp_3\tp3\win_64\linkedlist.h
+
+1572913830 d:\esteban mato\labo-progra-1\tp_laboratorio_1\tp_3\tp3\win_64\employee.h
+
+1572906714 source:d:\esteban mato\labo-progra-1\tp_laboratorio_1\tp_3\tp3\win_64\employee.c
+
+1572906714 source:d:\esteban mato\labo-progra-1\tp_laboratorio_1\tp_3\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1572906714 d:\esteban mato\labo-progra-1\tp_laboratorio_1\tp_3\tp3\win_64\controller.h
+
+1572906714 source:d:\esteban mato\labo-progra-1\tp_laboratorio_1\tp_3\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1573234075 source:c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"validaciones.h"
+	"Controller.h"
+
+1572954247 c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\linkedlist.h
+
+1573234278 c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\employee.h
+	"LinkedList.h"
+
+1573228637 source:c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573220360 c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\controller.h
+
+1573148924 source:c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573227894 source:c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"LinkedList.h"
+	"validaciones.h"
+
+1573234370 source:c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"validaciones.h"
+	"LinkedList.h"
+
+1573223964 c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\validaciones.h
+
+1572954247 c:\users\esteban\desktop\labo-progra-1\tp_laboratorio_1\tp_3\tp3_propio\win_64\parser.h
+
+1573234601 source:c:\users\esteban\desktop\tp_3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"validaciones.h"
+	"Controller.h"
+
+1572954247 c:\users\esteban\desktop\tp_3\linkedlist.h
+
+1573234278 c:\users\esteban\desktop\tp_3\employee.h
+	"LinkedList.h"
+
+1572954247 c:\users\esteban\desktop\tp_3\parser.h
+
+1573223964 c:\users\esteban\desktop\tp_3\validaciones.h
+
+1573220360 c:\users\esteban\desktop\tp_3\controller.h
+
+1573234370 source:c:\users\esteban\desktop\tp_3\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"validaciones.h"
+	"LinkedList.h"
+
+1573234825 source:c:\users\esteban\desktop\tp_3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573148924 source:c:\users\esteban\desktop\tp_3\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573234871 source:c:\users\esteban\desktop\tp_3\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"LinkedList.h"
+	"validaciones.h"
+
+1573234601 source:c:\users\esteban\desktop\tp_laboratorio_1\tp_3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"validaciones.h"
+	"Controller.h"
+
+1572954247 c:\users\esteban\desktop\tp_laboratorio_1\tp_3\linkedlist.h
+
+1573234278 c:\users\esteban\desktop\tp_laboratorio_1\tp_3\employee.h
+	"LinkedList.h"
+
+1572954247 c:\users\esteban\desktop\tp_laboratorio_1\tp_3\parser.h
+
+1573223964 c:\users\esteban\desktop\tp_laboratorio_1\tp_3\validaciones.h
+
+1573220360 c:\users\esteban\desktop\tp_laboratorio_1\tp_3\controller.h
+
+1573234370 source:c:\users\esteban\desktop\tp_laboratorio_1\tp_3\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"validaciones.h"
+	"LinkedList.h"
+
+1573234825 source:c:\users\esteban\desktop\tp_laboratorio_1\tp_3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573148924 source:c:\users\esteban\desktop\tp_laboratorio_1\tp_3\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573235099 source:c:\users\esteban\desktop\tp_laboratorio_1\tp_3\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"LinkedList.h"
+	"validaciones.h"
+
+1573217142 source:c:\users\usuario\desktop\tp_3_estrban\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"validaciones.h"
+	"Controller.h"
+
+1573217142 c:\users\usuario\desktop\tp_3_estrban\linkedlist.h
+
+1573217142 c:\users\usuario\desktop\tp_3_estrban\employee.h
+	"LinkedList.h"
+
+1573217142 c:\users\usuario\desktop\tp_3_estrban\parser.h
+
+1573217142 c:\users\usuario\desktop\tp_3_estrban\validaciones.h
+
+1573217142 c:\users\usuario\desktop\tp_3_estrban\controller.h
+
+1573217142 source:c:\users\usuario\desktop\tp_3_estrban\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"validaciones.h"
+	"LinkedList.h"
+
+1573217142 source:c:\users\usuario\desktop\tp_3_estrban\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573217142 source:c:\users\usuario\desktop\tp_3_estrban\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573217142 source:c:\users\usuario\desktop\tp_3_estrban\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"LinkedList.h"
+	"validaciones.h"
+

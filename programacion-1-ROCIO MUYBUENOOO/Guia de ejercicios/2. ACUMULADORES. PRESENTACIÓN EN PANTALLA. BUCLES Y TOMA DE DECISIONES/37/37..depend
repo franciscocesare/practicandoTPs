@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1568249313 source:c:\users\rocio\desktop\programacion-1\guia de ejercicios\2. acumuladores. presentaci”n en pantalla. bucles y toma de decisiones\37\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<ctype.h>
+	<conio.h>
+

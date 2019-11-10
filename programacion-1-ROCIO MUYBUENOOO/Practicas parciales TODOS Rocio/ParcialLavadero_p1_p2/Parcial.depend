@@ -1,0 +1,169 @@
+# depslib dependency file v1.0
+1569719021 source:c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\autos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	<string.h>
+	"inputDiaz.h"
+	"autos.h"
+	"trabajos.h"
+
+1569719021 c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\inputdiaz.h
+
+1569719021 c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\autos.h
+
+1569719021 c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\trabajos.h
+
+1569719021 source:c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"inputDiaz.h"
+	"autos.h"
+	"trabajos.h"
+	"informes.h"
+
+1569719021 c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\informes.h
+
+1569719021 source:c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	<string.h>
+	<time.h>
+	"inputDiaz.h"
+
+1569719021 source:c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"autos.h"
+	"trabajos.h"
+	"informes.h"
+
+1569719021 source:c:\users\rocio\desktop\programacion-1\diaz.rocio.1g\trabajos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	<string.h>
+	"inputDiaz.h"
+	"autos.h"
+	"trabajos.h"
+	"inputDiaz.h"
+
+1569278335 source:c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\autos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	<string.h>
+	"inputDiaz.h"
+	"autos.h"
+	"trabajos.h"
+
+1569278335 c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\inputdiaz.h
+
+1569278335 c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\autos.h
+
+1569278335 c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\trabajos.h
+
+1569278335 source:c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"inputDiaz.h"
+	"autos.h"
+	"trabajos.h"
+	"informes.h"
+
+1569278335 c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\informes.h
+
+1569278335 source:c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	<string.h>
+	<time.h>
+	"inputDiaz.h"
+
+1569278335 source:c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"autos.h"
+	"trabajos.h"
+	"informes.h"
+
+1569278335 source:c:\users\alumno\desktop\programacion-1\diaz.rocio.1g\trabajos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	<string.h>
+	"inputDiaz.h"
+	"autos.h"
+	"trabajos.h"
+	"inputDiaz.h"
+
+1569715421 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parciallavadero_p1_p2\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"inputDiaz.h"
+	"autos.h"
+	"trabajos.h"
+	"informes.h"
+
+1569715421 c:\users\rocio\desktop\programacion-1\practicas parciales\parciallavadero_p1_p2\inputdiaz.h
+
+1569980047 c:\users\rocio\desktop\programacion-1\practicas parciales\parciallavadero_p1_p2\autos.h
+	"autos.h"
+
+1569715421 c:\users\rocio\desktop\programacion-1\practicas parciales\parciallavadero_p1_p2\trabajos.h
+
+1569715421 c:\users\rocio\desktop\programacion-1\practicas parciales\parciallavadero_p1_p2\informes.h
+
+1569715421 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parciallavadero_p1_p2\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	<string.h>
+	<time.h>
+	"inputDiaz.h"
+
+1569715421 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parciallavadero_p1_p2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"autos.h"
+	"trabajos.h"
+	"informes.h"
+
+1569715421 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parciallavadero_p1_p2\trabajos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	<string.h>
+	"inputDiaz.h"
+	"autos.h"
+	"trabajos.h"
+	"inputDiaz.h"
+

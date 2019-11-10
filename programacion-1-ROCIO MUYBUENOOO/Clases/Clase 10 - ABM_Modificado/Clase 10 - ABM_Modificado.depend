@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1569279039 source:c:\users\alumno\desktop\abm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1569621355 source:c:\users\alumno\desktop\programacion-1\clases recursada\clase 10 - abm_modificado\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"carrera.h"
+	"alumno.h"
+
+1569283528 D
+
+1569556435 source:c:\users\rocio\desktop\programacion-1\clases recursada\clase 10 - abm_modificado\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1569556435 
+
+1569556435 da31e06c72d4003ba488f2aa4265fa407332e
+
+1569621316 source:c:\users\alumno\desktop\programacion-1\clases recursada\clase 10 - abm_modificado\alumno.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"carrera.h"
+	"alumno.h"
+
+1569622598 c:\users\alumno\desktop\programacion-1\clases recursada\clase 10 - abm_modificado\carrera.h
+
+1569622438 c:\users\alumno\desktop\programacion-1\clases recursada\clase 10 - abm_modificado\alumno.h
+	"carrera.h"
+
+1569622343 source:c:\users\alumno\desktop\programacion-1\clases recursada\clase 10 - abm_modificado\carrera.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"carrera.h"
+	"alumno.h"
+

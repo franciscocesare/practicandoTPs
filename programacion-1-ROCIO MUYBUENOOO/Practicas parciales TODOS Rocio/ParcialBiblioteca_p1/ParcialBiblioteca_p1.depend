@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1570410441 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1570414454 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"libros.h"
+	"autores.h"
+	"inputDiaz.h"
+
+1570414454 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\autores.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"autores.h"
+	"inputDiaz.h"
+
+1570414454 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\socios.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"socios.h"
+	"inputDiaz.h"
+
+1570414454 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\prestamos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"libros.h"
+	"autores.h"
+	"socios.h"
+	"prestamos.h"
+	"inputDiaz.h"
+
+1570412633 c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\libros.h
+	"autores.h"
+
+1570405524 c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\autores.h
+
+1570412765 c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\socios.h
+
+1570413970 c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\prestamos.h
+
+1570410441 c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\inputdiaz.h
+
+1570414174 source:c:\users\rocio\desktop\programacion-1\practicas parciales\parcialbiblioteca_p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"libros.h"
+	"autores.h"
+	"socios.h"
+	"prestamos.h"
+	"inputDiaz.h"
+

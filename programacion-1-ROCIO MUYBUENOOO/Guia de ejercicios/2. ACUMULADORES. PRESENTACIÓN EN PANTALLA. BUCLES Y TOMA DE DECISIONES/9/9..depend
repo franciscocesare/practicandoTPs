@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1567964071 source:c:\users\rocio\downloads\programacion-1\guia de ejercicios\acumuladores. presentaci”n en pantalla. bucles y toma de decisiones\9.\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1567967308 source:c:\users\rocio\downloads\programacion-1\guia de ejercicios\acumuladores. presentaci”n en pantalla. bucles y toma de decisiones\9\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
