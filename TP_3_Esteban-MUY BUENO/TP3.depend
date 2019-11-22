@@ -288,3 +288,55 @@
 	"LinkedList.h"
 	"validaciones.h"
 
+1573217142 source:c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"validaciones.h"
+	"Controller.h"
+
+1573217142 c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\linkedlist.h
+
+1573217142 c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\employee.h
+	"LinkedList.h"
+
+1573217142 c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\parser.h
+
+1573217142 c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\validaciones.h
+
+1573217142 c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\controller.h
+
+1573217142 source:c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"validaciones.h"
+	"LinkedList.h"
+
+1573217142 source:c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573217142 source:c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"validaciones.h"
+
+1573217142 source:c:\users\usuario\desktop\practicandotps\tp_3_esteban-muy bueno\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"LinkedList.h"
+	"validaciones.h"
+
