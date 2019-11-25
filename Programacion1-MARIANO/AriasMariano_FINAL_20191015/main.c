@@ -15,7 +15,6 @@ int main()
     LinkedList* listaLibros=ll_newLinkedList();
     LinkedList* listaConDescuentos;
 
-   // char nombre[20]; Variable para recibir el nombre de archivo por teclado
 
     do{
         option=menuInicio();

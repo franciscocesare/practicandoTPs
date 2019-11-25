@@ -12,8 +12,9 @@
  * \return
  *
  */
-
-int parser_FromText(FILE* pFile , LinkedList* lista){
+///aca va a ir en pFile el nombre que le ponga a mi archivo y en lista tambien
+int parser_FromText(FILE* pFile, LinkedList* lista)///*a file
+{
     char campo_1[5];
     char campo_2[75];
     char campo_3[75];
@@ -22,24 +23,38 @@ int parser_FromText(FILE* pFile , LinkedList* lista){
 
     int charge;
     charge=fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^\n]\n", campo_1, campo_2, campo_3, campo_4, campo_5);
-    do{
-        charge=fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^\n]\n", campo_1, campo_2, campo_3, campo_4, campo_5);
-        if(charge!=5){
-            printf("\nError");
-        }else{
-            eLibro* pLibro=libro_new();
-            if (pLibro!=NULL){
+///aca para leer el primer renglon que no tiene informacion en algunos casos no va a ir
 
-                    entidad_setCampo1(pLibro, campo_1);
-                    entidad_setCampo2(pLibro, campo_2);
-                    entidad_setCampo3(pLibro, campo_3);
-                    entidad_setCampo4(pLibro, campo_4);
-                    entidad_setCampo5(pLibro, campo_5);
+    do
+    {
+        charge=fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^\n]\n", campo_1, campo_2, campo_3, campo_4, campo_5);
+        /*
+        La función recibe como primer argumento el puntero al archivo (pFile), luego recibe la regla a
+        aplicar sobre los datos leídos, y luego recibe una cantidad indefinida de punteros a las
+        variables (campo1 2, 3 y 4 en este caso)
+        */
+
+        if(charge!=5)
+        {
+            printf("\nError");
+        }
+        else
+        {
+            eLibro* pLibro=libro_new();
+            if (pLibro!=NULL)
+            {
+
+                entidad_setCampo1(pLibro, campo_1);
+                entidad_setCampo2(pLibro, campo_2);
+                entidad_setCampo3(pLibro, campo_3);
+                entidad_setCampo4(pLibro, campo_4);
+                entidad_setCampo5(pLibro, campo_5);
             }
 
-           ll_add(lista, pLibro);
+            ll_add(lista, pLibro);
         }
-    }while(!feof(pFile));
+    }
+    while(!feof(pFile));
     fclose(pFile);
 
     return 1;
@@ -51,42 +66,52 @@ int parser_FromText(FILE* pFile , LinkedList* lista){
  * \return
  *
  */
-
-int entidad_setCampo1(eLibro* pLibro, char *aux){
+///para ir seteando cada campo con validacion que sea correcto
+int entidad_setCampo1(eLibro* pLibro, char *aux)///puntero a pLibro y aux para la variable antes de ser cargada
+{
     int retorno=0;
-    if(pLibro!=NULL && aux!=NULL){
-        pLibro->id=atoi(aux);
+    if(pLibro!=NULL && aux!=NULL)
+    {
+        pLibro->id=atoi(aux);///cargamos la aux en el campo ID de la entidad
         retorno=1;
     }
     return retorno;
 }
-int entidad_setCampo2(eLibro* pLibro, char *aux){
+int entidad_setCampo2(eLibro* pLibro, char *aux)
+{
     int retorno=0;
-    if(pLibro!=NULL && aux!=NULL){
+    if(pLibro!=NULL && aux!=NULL)
+    {
         strcpy(pLibro->titulo,aux);
         retorno=1;
     }
     return retorno;
 }
-int entidad_setCampo3(eLibro* pLibro, char *aux){
+int entidad_setCampo3(eLibro* pLibro, char *aux)
+{
     int retorno=0;
-    if(pLibro!=NULL && aux!=NULL){
+    if(pLibro!=NULL && aux!=NULL)
+    {
         strcpy(pLibro->autor,aux);
         retorno=1;
     }
     return retorno;
 }
-int entidad_setCampo4(eLibro* pLibro, char *aux){
+int entidad_setCampo4(eLibro* pLibro, char *aux)
+{
     int retorno=0;
-    if(pLibro!=NULL && aux!=NULL){
+    if(pLibro!=NULL && aux!=NULL)
+    {
         pLibro->precio=atoi(aux);
         retorno=1;
     }
-   return retorno;
+    return retorno;
 }
-int entidad_setCampo5(eLibro* pLibro, char *aux){
+int entidad_setCampo5(eLibro* pLibro, char *aux)
+{
     int retorno=0;
-    if(pLibro!=NULL && aux!=NULL){
+    if(pLibro!=NULL && aux!=NULL)
+    {
         pLibro->editorialId=atoi(aux);
         retorno=1;
     }
@@ -102,9 +127,10 @@ int entidad_setCampo5(eLibro* pLibro, char *aux){
  *
  */
 
-eLibro* libro_new(){
+eLibro* libro_new()
+{
 
-eLibro* pLibro=(eLibro*)malloc(sizeof(eLibro));
+    eLibro* pLibro=(eLibro*)malloc(sizeof(eLibro));
 
     char* aux=0;
 
@@ -114,7 +140,7 @@ eLibro* pLibro=(eLibro*)malloc(sizeof(eLibro));
     entidad_setCampo4(pLibro,aux);
     entidad_setCampo5(pLibro,aux);
 
-return pLibro;
+    return pLibro;
 }
 
 /** \brief tomo el valor del campo solicitado y lo asigno a la variable valor la cual retorno
@@ -125,24 +151,28 @@ return pLibro;
  *
  */
 
-int eEntidad_getCampo1(eLibro* thisIs){
+int eEntidad_getCampo1(eLibro* thisIs)
+{
     int valor=-1;
-    if (thisIs!=NULL){
+    if (thisIs!=NULL)
+    {
         valor=thisIs->id;
     }
     return valor;
 }
 
-char* eEntidad_getCampo2(eLibro* thisIs){
+char* eEntidad_getCampo2(eLibro* thisIs)
+{
     char* valor;
     if(thisIs!=NULL)
     {
-       valor=thisIs->titulo;
+        valor=thisIs->titulo;
     }
     return valor;
 }
 
-char* eEntidad_getCampo3(eLibro* thisIs){
+char* eEntidad_getCampo3(eLibro* thisIs)
+{
     char* valor;
     if (thisIs!=NULL)
     {
@@ -151,17 +181,21 @@ char* eEntidad_getCampo3(eLibro* thisIs){
     return valor;
 }
 
-int eEntidad_getCampo4(eLibro* thisIs){
+int eEntidad_getCampo4(eLibro* thisIs)
+{
     int valor=-1;
-    if (thisIs!=NULL){
+    if (thisIs!=NULL)
+    {
         valor=thisIs->precio;
     }
     return valor;
 }
 
-int eEntidad_getCampo5(eLibro* thisIs){
+int eEntidad_getCampo5(eLibro* thisIs)
+{
     int valor=-1;
-    if (thisIs!=NULL){
+    if (thisIs!=NULL)
+    {
         valor=thisIs->editorialId;
     }
     return valor;
@@ -189,7 +223,7 @@ int parser_SaveToText(LinkedList* lista, char* archivo)
         len=ll_len(lista);
         fprintf(pFile,"Id , Titulo, Autor, Precio,EditorialId\n");
 
-        for(i=0;i<len;i++)
+        for(i=0; i<len; i++)
         {
             aux = ll_get(lista,i);
 
@@ -209,31 +243,44 @@ int parser_SaveToText(LinkedList* lista, char* archivo)
  *
  */
 
-void printerList (LinkedList* lista){
-int i;
-int largo=ll_len(lista);
-eLibro* libro;
+void printerList (LinkedList* lista)
+{
+    int i;
+    int largo=ll_len(lista);
+    eLibro* libro;
 
 
-printf("\n %3s %20s %20s %10s %10s","Id", "Titulo","Autor","Precio", "Editorial");
-printf("\n");
-    for (i=0;i<largo;i++){
+    printf("\n %3s %20s %20s %10s %10s","Id", "Titulo","Autor","Precio", "Editorial");
+    printf("\n");
+    for (i=0; i<largo; i++)
+    {
 
         libro=ll_get(lista, i);
 
         printf("\n%3d %5s %5s %5d %d",eEntidad_getCampo1(libro),eEntidad_getCampo2(libro),eEntidad_getCampo3(libro), eEntidad_getCampo4(libro), eEntidad_getCampo5(libro));
 
-        if(libro->editorialId==1){
+        if(libro->editorialId==1)
+        {
             printf(" - PLANETA");
-        }else if(libro->editorialId==2){
+        }
+        else if(libro->editorialId==2)
+        {
             printf(" - SIGLO XXI");
-        }else if(libro->editorialId==3){
+        }
+        else if(libro->editorialId==3)
+        {
             printf(" - PEARSON");
-        }else if(libro->editorialId==4){
+        }
+        else if(libro->editorialId==4)
+        {
             printf(" - MINOTAURO");
-        }else if (libro->editorialId==5){
+        }
+        else if (libro->editorialId==5)
+        {
             printf(" - SALAMANDRA");
-        }else if (libro->editorialId==6){
+        }
+        else if (libro->editorialId==6)
+        {
             printf(" - PENGUIN BOOKS");
         }
     }
@@ -248,15 +295,19 @@ printf("\n");
  */
 
 
-void setDescuento(void* element){
+void setDescuento(void* element)
+{
 
     int auxEditorial=((eLibro*)element)->editorialId;
 
-   // int descuento=((eLibro*)element)->precio;
+    // int descuento=((eLibro*)element)->precio;
     //Editorial PLANETA 20 % de descuento
-    if(auxEditorial==1){
+    if(auxEditorial==1)
+    {
         ((eLibro*)element)->precio=((eLibro*)element)->precio-((((eLibro*)element)->precio)*20/100);
-    }else if (auxEditorial==2){
+    }
+    else if (auxEditorial==2)
+    {
         ((eLibro*)element)->precio=((eLibro*)element)->precio-((((eLibro*)element)->precio)*10/100);
     }
 }
@@ -268,7 +319,8 @@ void setDescuento(void* element){
  *
  */
 
-int ordenar(void* element, void* elementB){
+int ordenar(void* element, void* elementB)
+{
 
     return (((eLibro*)element)->editorialId>((eLibro*)elementB)->editorialId);
 
