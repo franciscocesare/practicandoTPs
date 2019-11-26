@@ -125,9 +125,9 @@ int eCachorro_setDias(eCachorro* listaCachorro,int dias)
 int eCachorro_setRaza(eCachorro* listaCachorro, char* raza)
 {
     int result=0;
-    if( listaCachorro != NULL && raza!= NULL && strlen(raza) >= 20 )
+    if( listaCachorro != NULL && raza!= NULL && strlen(raza) <= 20 )
     {
-        strcpy(listaCachorro->raza, *raza);
+        strcpy(listaCachorro->raza, raza);
         result = 1;
     }
     return result;
@@ -146,7 +146,7 @@ int eCachorro_getRaza(eCachorro* listaCachorro,char* raza)
     int result=0;
     if( listaCachorro != NULL && raza != NULL)
     {
-        strcpy( *raza,listaCachorro->raza);
+        strcpy( raza,listaCachorro->raza);
         result = 1;
     }
     return result;
@@ -184,7 +184,7 @@ int eCachorro_getGenero(eCachorro* listaCachorro,char* genero)
 
     if(listaCachorro!=NULL && genero != NULL)
     {
-        strcpy(listaCachorro->genero, *genero);
+        *genero=listaCachorro->genero;
         ///*genero = listaCachorro->genero;
         result = 1;
     }
@@ -199,7 +199,7 @@ int eCachorro_setReservado(eCachorro* listaCachorro,char* reservado)
     int result=0;
     if(listaCachorro!=NULL  )
     {
-        strcpy(listaCachorro->reservado, *reservado);
+        strcpy(listaCachorro->reservado, reservado);
         ///listaCachorro->reservado = *reservado;
         result=1;
     }
@@ -287,11 +287,11 @@ eCachorro* newCachorro_Parametros(char* id,char* nombre,char* dias, char* raza ,
  *
  * \param Recibe LinkedList*
  */
-void showCachorro(eCachorro* cachorro)
+void showCachorro(eCachorro* nuevo)
 {
-    if (cachorro!= NULL)
+    if (nuevo!= NULL)
     {
-        printf("%4d   %10s  %5d   %10s   %5s   %5c\n",cachorro->id_cachorro, cachorro->nombre, cachorro->dias, cachorro->raza, cachorro->reservado, cachorro->genero);
+        printf("%4d   %10s  %5d   %10s   %10s   %5c\n",nuevo->id_cachorro, nuevo->nombre, nuevo->dias, nuevo->raza, nuevo->reservado, nuevo->genero);
     }
 }
 /*void showDominio(eCachorro* dominios)

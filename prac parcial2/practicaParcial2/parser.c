@@ -32,12 +32,12 @@ int parser_DominioFromText(FILE* pFile, LinkedList* pArrayLinkedDominio)
             if(cant == 3)
             {
 
-           // printf("%s %s %s\n",buffer[0],buffer[1],buffer[2] );
+
                 dom = newDominio_Parametros(buffer[0],buffer[1],buffer[2], "X");
-                  //  showDominio(dom);
+
                 if(dom != NULL)
                 {
-                 //   printf("Hola");
+
                     ll_add(pArrayLinkedDominio,dom );
                     result = 1;
                 }
