@@ -51,7 +51,7 @@ int eCachorro_getId(eCachorro* listaCachorro,int* id)
 int eCachorro_setNombre(eCachorro* listaCachorro, char* nombre)
 {
     int result=0;
-    if( listaCachorro != NULL && nombre != NULL && strlen(nombre) >= 20 )
+    if( listaCachorro != NULL && nombre != NULL && strlen(nombre) <= 20 )
     {
         strcpy(listaCachorro->nombre, nombre);
         result = 1;
@@ -66,7 +66,7 @@ int eCachorro_setNombre(eCachorro* listaCachorro, char* nombre)
  * \param Puntero a char donde guardara la cadena de la estructura.
  * \return Retorna 0 (cero) o 1 (uno).
  */
-int eCachorro_getnombre(eCachorro* listaCachorro,char* nombre)
+int eCachorro_getNombre(eCachorro* listaCachorro,char* nombre)
 {
 
     int result=0;
@@ -220,8 +220,8 @@ int eCachorro_getReservado(eCachorro* listaCachorro,char* reservado)
 
     if(listaCachorro!=NULL && reservado != NULL)
     {
-       strcpy(reservado, listaCachorro->reservado);
-       /// *reservado = listaCachorro->reservado;
+        strcpy(reservado, listaCachorro->reservado);
+        /// *reservado = listaCachorro->reservado;
         result = 1;
     }
     return result;
@@ -257,30 +257,32 @@ eCachorro* newCachorro()
  *
  * \return Retorna la estructura Employee* con los datos cargados en sus campos
  */
-eCachorro* newCachorro_Parametros(char* id,char* nombre,char* dias, char* raza , char* reservado,char* genero)
+eCachorro* newCachorro_Parametros(char* id,char* nombre,char* dias, char* raza, char* reservado,char* genero)
 {
     eCachorro* nuevo = newCachorro();
     if( nuevo != NULL)
     {
-        ///if(id!=NULL && dominio!=NULL && anio!=NULL && tipo!=NULL)
+
         if (id!=NULL && nombre!=NULL && dias!=NULL &&  raza!=NULL && reservado != NULL && genero!=NULL)
         {
-         if( !eCachorro_setId(nuevo,atoi(id))
-            || !eCachorro_setNombre(nuevo, nombre)
-            || !eCachorro_setDias(nuevo, atoi(dias))
-            || !eCachorro_setRaza(nuevo, raza)
-            || !eCachorro_setReservado(nuevo, reservado)
-            || !eCachorro_setGenero(nuevo, genero))
-
-            {
-                free(nuevo);
-                nuevo = NULL;
-            }
+            eCachorro_setId(nuevo,atoi(id));
+            eCachorro_setNombre(nuevo, nombre);
+            eCachorro_setDias(nuevo, atoi(dias));
+            eCachorro_setRaza(nuevo, raza);
+            eCachorro_setReservado(nuevo, reservado);
+            eCachorro_setGenero(nuevo, genero);
         }
-    }
+        else
+        {
+            free(nuevo);
+        }
 
+    }
     return nuevo;
 }
+
+
+
 
 
 /** \brief Muestra en pantalla, los datos de la linkedList
@@ -312,8 +314,8 @@ void showCachorros(LinkedList* pArrayLinkedCachorro)
 {
     int tam;
 
-    printf(" ID     NOMBRE   DIAS   RAZA  RESERVADO   GENERO\n");
-    printf("------------------------------------\n");
+    printf(" ID     NOMBRE       DIAS       RAZA        RESERVADO   GENERO\n");
+    printf("-----------------------------------------------------\n");
 
     if(ll_len(pArrayLinkedCachorro) == 0)
     {
@@ -383,14 +385,89 @@ void* seteaTipo(eDominio* dom)///la funcion que despues es pasada como pFUNC a l
 }
 */
 /// PARA FILTER
-
-/*int filterTipo(void* e) ///la funcion que despues es pasada como pFUNC a ll_filter
+int filter_45dias(void* aux) ///la funcion que despues es pasada como pFUNC a ll_filter
 {
     int todoOk = 0;
-    eCachorro* dom =NULL;
+
+    ///eCachorro* cachorro45 =NULL;
+    if(aux != NULL)
+    {
+        int dias;
+        aux = (eCachorro*)aux;
+        eCachorro_getDias(aux,&dias);
+        if (dias>45)
+            todoOk=1;
+        /*if(cachorro45->dias <= 45)
+        {
+            todoOk = 1;
+        }*/
+    }
+    return todoOk;
+}
+
+int filter_machos(void* aux) ///la funcion que despues es pasada como pFUNC a ll_filter
+{
+    int todoOk = 0;
+    if(aux != NULL)  ///me falla machos
+    {
+        char genero;
+        aux = (eCachorro*)aux;
+        eCachorro_getGenero(aux,genero);
+
+        if (genero !='M')
+            todoOk=1;
+
+    }
+    return todoOk;
+}
+
+int filter_callejeros(void* aux) ///la funcion que despues es pasada como pFUNC a ll_filter
+{
+    int todoOk = 0;
+
+    ///eCachorro* cachorro45 =NULL;
+    if(aux != NULL)
+    {
+        char raza [20];
+        aux = (eCachorro*)aux;
+        eCachorro_getRaza(aux,raza);
+        if (strcmpi(raza,"Callejero")==0)
+            todoOk=1;
+        /*if(cachorro45->dias <= 45)
+        {
+            todoOk = 1;
+        }*/
+    }
+    return todoOk;
+}
+
+///FILTER DE RO
+/*int employee_filterUnder45(void* aux)
+{
+    int returnAux = 0;
+
+    if(aux != NULL)
+    {
+        int age;
+        aux = (mascota*)aux;
+
+        employee_getAge(aux, &age);
+
+        if(age > 45)
+            returnAux = 1;
+    }
+
+    return returnAux;
+}
+
+/*
+    int filterTipo(void* e) ///la funcion que despues es pasada como pFUNC a ll_filter
+{
+    int todoOk = 0;
+    eDominio* dom =NULL;
     if(e != NULL)
     {
-        dom = (eCachorro*)e;
+        dom = (eDominio*)e;
         if(dom->tipo != 'M')
         {
             todoOk = 1;
@@ -398,5 +475,4 @@ void* seteaTipo(eDominio* dom)///la funcion que despues es pasada como pFUNC a l
     }
     return todoOk;
 }
-
 */

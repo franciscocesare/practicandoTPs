@@ -245,7 +245,7 @@
 
 1574725247 c:\users\alumno\desktop\practicaparcial2\controller.h
 
-1574743240 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\controller.c
+1574831206 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\controller.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -257,15 +257,15 @@
 	"Dominio.h"
 	"validaciones.h"
 
-1574737068 c:\users\usuario\desktop\practicandotps\falla_parcial2\linkedlist.h
+1574826177 c:\users\usuario\desktop\practicandotps\falla_parcial2\linkedlist.h
 
 1574737068 c:\users\usuario\desktop\practicandotps\falla_parcial2\parser.h
 
-1574737931 c:\users\usuario\desktop\practicandotps\falla_parcial2\dominio.h
+1574832001 c:\users\usuario\desktop\practicandotps\falla_parcial2\dominio.h
 
-1574737068 c:\users\usuario\desktop\practicandotps\falla_parcial2\validaciones.h
+1574823411 c:\users\usuario\desktop\practicandotps\falla_parcial2\validaciones.h
 
-1574743837 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\dominio.c
+1574832061 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\dominio.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -273,7 +273,7 @@
 	"validaciones.h"
 	"Dominio.h"
 
-1574737068 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\linkedlist.c
+1574826177 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\linkedlist.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -281,18 +281,19 @@
 	"validaciones.h"
 	"Dominio.h"
 
-1574741762 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\main.c
+1574832202 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 	"LinkedList.h"
 	"controller.h"
 	"Dominio.h"
 	"validaciones.h"
 	"parser.h"
 
-1574737068 c:\users\usuario\desktop\practicandotps\falla_parcial2\controller.h
+1574812174 c:\users\usuario\desktop\practicandotps\falla_parcial2\controller.h
 
-1574743851 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\parser.c
+1574815136 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"stdlib.h"
@@ -300,7 +301,7 @@
 	"Dominio.h"
 	"parser.h"
 
-1574737068 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\validaciones.c
+1574823411 source:c:\users\usuario\desktop\practicandotps\falla_parcial2\validaciones.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

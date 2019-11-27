@@ -67,7 +67,7 @@ int menu()
 
     system("cls");
     printf("****PRACTICA PARCIAL****\n\n");
-    printf("1. Cargar los datos de los cachorros desde el archivo cachorros.csv (modo texto).\n");
+    printf("1. Cargar los datos .\n");
     printf("2. Listar CACHORROS\n");
     printf("3. mapear y filtrar\n");
     printf("4. Listar cachorros filtrados por 45 dias\n");

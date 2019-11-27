@@ -77,34 +77,39 @@ int controller_loadFromText(char* path , LinkedList* pArrayLinkedCachorros)
  * \return int
  *
  */
-/*int controller_saveAsText(char* path , LinkedList* pArrayLinkedDominio)
+///int controller_saveAsText(char* path , LinkedList* pArrayLinkedDominio)
+int controller_saveAsText(char* path , LinkedList* pArrayLinkedCachorro)
 {
     FILE* pFile = NULL;
-    eDominio* auxDom = NULL;
-    int size=ll_len(pArrayLinkedDominio);
+    eCachorro* auxCachorro = NULL;
+    int size=ll_len(pArrayLinkedCachorro);
     int result=-1;
 
-    int id;
-    int anio;
-    char tipo;
-    char dominio[130];
+    int id_cachorro;
+    char nombre[20];
+    int dias;
+    char raza[20];
+    char reservado[3];
+    char genero;
 
-    if(pArrayLinkedDominio!=NULL && path!=NULL)
+    if(pArrayLinkedCachorro!=NULL && path!=NULL)
     {
         if(size>0)
         {
-            pFile=fopen(path,"w");
+            pFile=fopen(path,"w");///abrimos el archivo para escrbirlo
 
             if(pFile!=NULL)
             {
                  for(int i=0;i<size;i++)
                 {
-                    auxDom=(eDominio*)ll_get(pArrayLinkedDominio,i);
-                    eDominio_getId(auxDom, &id);
-                    eDominio_getDominio(auxDom,dominio);
-                    eDominio_getAnio(auxDom,&anio);
-                    eDominio_getTipo(auxDom,&tipo);
-                    fprintf(pFile,"%d,%s,%d,%c\n",id,dominio,anio,tipo);
+                    auxCachorro=(eCachorro*)ll_get(pArrayLinkedCachorro,i);///obtiene el array en tal indice
+                    eCachorro_getId(auxCachorro, &id_cachorro);
+                    eCachorro_getNombre(auxCachorro,nombre);
+                    eCachorro_getDias(auxCachorro,&dias);
+                    eCachorro_getRaza(auxCachorro,raza);
+                    eCachorro_getReservado(auxCachorro, reservado);
+                    eCachorro_getGenero(auxCachorro, genero);
+                    fprintf(pFile,"%d,%s,%d,%s,%s,%c\n",id_cachorro,nombre,dias,raza, reservado,genero);
                 }
                 fclose(pFile);
                 result=1;
@@ -117,7 +122,7 @@ int controller_loadFromText(char* path , LinkedList* pArrayLinkedCachorros)
 
     return result;
 }
-*/
+
 /** \brief Guarda los datos de los empleados en el archivo data.bin (modo binario).
  *
  * \param path char*

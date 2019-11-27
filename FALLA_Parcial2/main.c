@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "LinkedList.h"
 #include "controller.h"
 #include "Dominio.h"
@@ -12,13 +13,18 @@ int main()
     int flag=0;
 
 
-    FILE *pArchivo;
+    ///FILE *pArchivo;
     LinkedList* listaCachorro = ll_newLinkedList();
-   // LinkedList* listaMapeada = NULL; ///aca hacer los filters
+    LinkedList* lista45Dias = NULL;
+    LinkedList* listaMachos = NULL;
+    LinkedList* listaCallejeros = NULL;
+    // LinkedList* listaMapeada = NULL; ///aca hacer los filters
     //LinkedList* listaFilterA = NULL; ///aca hacer los filters
-   // LinkedList* listaFilterM = NULL; ///aca hacer los filters
+    // LinkedList* listaFilterM = NULL; ///aca hacer los filters
 
     char salir = 'n';
+    char nombreArchivo [15];
+    char nombreArchivoAux [15]="cachorros.csv";
 
     if(listaCachorro!=NULL)
     {
@@ -28,98 +34,116 @@ int main()
             {
             case 1:
 
-                if((pArchivo=fopen("cachorros.csv","r"))==NULL)
+                getString(nombreArchivo, "INGRESE EL NOMBRE DEL ARCHIVO QUE DESEA ABRIR: ", "ERROR ");
+
+                if (!strcmpi(nombreArchivo,nombreArchivoAux))///(parser_CachorroFromText(pArchivo, listaCachorro))
+
                 {
-                    printf("\nNO SE PUDO ABRIR EL ARCHIVO\n");
-
-                }
-                else if (controller_loadFromText("cachorros.csv", listaCachorro))///(parser_CachorroFromText(pArchivo, listaCachorro))
-
-                {   printf("HOLA\n");
                     system("cls");
-                    printf("\nEL ARCHIVO ESTA CARGADO CORRECTAMENTE\n");
-                    flag=1;
+                    if (controller_loadFromText(nombreArchivo, listaCachorro))
+                    {
+                        system("cls");
+                        printf("\nEL ARCHIVO ESTA CARGADO CORRECTAMENTE, PUEDE CONTINUAR\n");
+                        flag=1;
+                    }
+
+                }
+                else
+                {
+                    system("cls");
+                    printf("\nEL ARCHIVO NO EXISTE\n");
                 }
 
-                fclose(pArchivo);
                 break;
 
             case 2:  ///LISTAR ORIGINAL, SIN TIPO MAPEADO
 
 
-                   /// printf("GOAOAOA");
-
-                    showCachorros(listaCachorro);
 
 
-                break;
-
-            case 3: ///MAPEAR Y CARGAR, CON TIPO DE VEHICULO
-            /*
                 if (flag)
                 {
-                    listaMapeada = ll_map(listaDominios, seteaTipo);
-                    printf("\nSE HA MAPEADO LA LISTA ORIGINAL Y AGREGADO EL TIPO\n");
 
-                }*/
+                    showCachorros(listaCachorro);
+                }
+                else
+                {
+                    printf("DEBE CARGAR ALGUN ARCHIVO\n");
+                }
+
+
                 break;
 
-            case 4: ///Listar vehiculos con tipo
+            case 3: ///mapear y filtrar
+
+                 if (flag)
+                 {
+                     lista45Dias = ll_filter(listaCachorro, filter_45dias);///filtra y genera una nueva lista
+                     controller_saveAsText("cachorros45dias.csv", lista45Dias);///guarda esa nueva lista en texto, con el nombre pasado como parametro
+
+    ///FALLA FILTER MACHOS     listaMachos = ll_filter(listaCachorro, filter_machos);///filtra y genera una nueva lista
+                  ///  controller_saveAsText("cachorrosMachos.csv", listaMachos); ///guarda esa nueva lista en texto, con el nombre pasado como parametro
+
+                     listaCallejeros = ll_filter(listaCachorro, filter_callejeros);
+                     controller_saveAsText("cachorros Callejeros.csv", listaCallejeros);
+                 }
                 /*
-                if(listaMapeada != NULL)
+                 pArraySubList = ll_filter(lista, employee_filterUnder45);
+               controller_saveAsText("cachorros45.csv",pArraySubList);
+                employee_printListOfEmployees(pArraySubList);
+                */
+                /*if (flag)
+                    {
+                        listaMapeada = ll_map(listaDominios, seteaTipo);
+                        printf("\nSE HA MAPEADO LA LISTA ORIGINAL Y AGREGADO EL TIPO\n");
+
+                    }*/
+                break;
+
+            case 4: ///printf("4. Listar cachorros filtrados por 45 dias\n");
+
+                if(lista45Dias != NULL)
                 {
-                    showDominios(listaMapeada);
+                    system("cls");
+                    printf("\nCACHORROS CON MAS DE 45 DIAS: \n\n");
+                    showCachorros(lista45Dias);
                 }
                 else
                 {
                     printf("\nERROR, TAL VEZ NO HAY ARCHIVOS CARGADOS.\n");
                 }
-            */
+
                 break;
 
 
-            case 5:///Listar vehiculos separados por tipo
-            /*
-                listaFilterA = ll_filter(listaMapeada, filterTipo, 'A');
-                listaFilterM = ll_filter(listaMapeada, filterTipo, 'M');
+            case 5:///printf("5. Listar cachorros filtrados por machos\n");
 
-                if(listaFilterA != NULL && listaFilterM != NULL)
+                   if(listaMachos != NULL)
                 {
-                    showDominios(listaFilterA);
-                    printf("\n");
-                    showDominios(listaFilterM);
-                }
-
-                /*if(!flag)///hacer flag de seteo motos y seteo autos
-                {
-                    printf("\nSe debe cargar un archivo previamente.\n");
+                    system("cls");
+                    printf("\nCACHORROS MACHOS: \n\n");
+                    showCachorros(listaMachos);
                 }
                 else
                 {
-                   controller_removeEmployee(listaEmpleados);
+                    printf("\nERROR, TAL VEZ NO HAY ARCHIVOS CARGADOS.\n");
                 }
-                */
                 break;
 
-            case 6:///generar archivo de salida Autos Y MOTOS
-                /*
-                if (flag)
+            case 6:/// Listar cachorros filtrado por callejeros\n");
+
+
+                if(listaCallejeros != NULL)
                 {
-
-                    controller_saveAsText("auto.csv", listaFilterA);
-                    controller_saveAsText("moto.csv", listaFilterM);
-
-                }
-
-                /*if(!flag)
-                {
-                    printf("\nSe debe cargar un archivo previamente.\n");
+                    system("cls");
+                    printf("\nCACHORROS CALLEJEROSS: \n\n");
+                    showCachorros(listaCallejeros);
                 }
                 else
                 {
-                   controller_ListEmployee(listaEmpleados);
+                    printf("\nERROR, TAL VEZ NO HAY ARCHIVOS CARGADOS.\n");
                 }
-                */
+
                 break;
 
 

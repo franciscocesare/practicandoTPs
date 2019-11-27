@@ -34,6 +34,14 @@ int eCachorro_getGenero(eCachorro* listaCachorro,char* genero);
 int eCachorro_setReservado(eCachorro* listaCachorro,char* reservado);///reservado
 int eCachorro_getReservado(eCachorro* listaCachorro,char* reservado);
 
+///FILTER DE CACHORROS
+int filter_45dias(void* aux);
+int filter_machos(void* aux);
+int filter_callejeros(void* aux) ;
+
+
+///FILTER DE DOMINIOS
+
 int setearTipo(eCachorro* cacho);///aca setear 45 dias??? y setear machos, y listado callejeros
 void* seteaTipo(eCachorro* e);
 
