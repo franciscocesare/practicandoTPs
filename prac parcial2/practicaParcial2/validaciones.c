@@ -72,9 +72,10 @@ int menu()
     printf("3. Mapear y cargar el TIPO de Vehiculo\n");
     printf("4. Listar los vehiculos con TIPO\n");
     printf("5. Listar vehiculos separados por TIPO\n");
-    printf("6. generar archivo de salida Autos (auto.csv)\n");
+    printf("6. listar vehiculos filtrados por anio 2004\n");
     printf("7. generar archivo de salida Motos (moto.csv)\n");
-    printf("8. Salir.\n");
+    printf("8.generar archivo de salida Autos (auto.csv)\n");
+    printf("9. Salir.\n");
     printf("\nIngrese una opcion del menu: ");
     fflush(stdin);
     scanf("%d", &option);

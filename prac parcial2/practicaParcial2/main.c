@@ -16,6 +16,7 @@ int main()
     LinkedList* listaMapeada = NULL;
     LinkedList* listaFilterA = NULL;
     LinkedList* listaFilterM = NULL;
+    LinkedList* listaFilter2004 = NULL;
     /* LinkedList* listaDominio=ll_newLinkedList();
      LinkedList* listaAutos;
      LinkedList* listaMotos;
@@ -81,8 +82,9 @@ int main()
 
             case 5:///Listar vehiculos separados por tipo
 
-                listaFilterA = ll_filter(listaMapeada, filterTipo, 'A');
-                listaFilterM = ll_filter(listaMapeada, filterTipo, 'M');
+                listaFilterA = ll_filter(listaMapeada, filterTipo_autos);
+                listaFilterM = ll_filter(listaMapeada, filterTipo_motos);
+
 
                 if(listaFilterA != NULL && listaFilterM != NULL)
                 {
@@ -91,51 +93,61 @@ int main()
                     showDominios(listaFilterM);
                 }
 
-                /*if(!flag)///hacer flag de seteo motos y seteo autos
+
+                break;
+
+            case 6:///dominios filtrados por anio
+
+                listaFilter2004=ll_filter(listaMapeada,filter_anio_2004);
+
+                if(listaMapeada=!NULL)
                 {
-                    printf("\nSe debe cargar un archivo previamente.\n");
+
+                    showDominios(listaFilter2004);
+
                 }
                 else
                 {
-                   controller_removeEmployee(listaEmpleados);
+                    printf("\nSe debe cargar un archivo previamente.\n");
                 }
-                */
+
                 break;
 
-            case 6:///generar archivo de salida Autos Y MOTOS
+            case 7: ///generar archivo de salida Motos
+
+                if (flag)
+                {
+
+                    /// controller_saveAsText("auto.csv", listaFilterA);
+                    controller_saveAsText("moto.csv", listaFilterM);
+
+                }
+                else
+
+                {
+                    printf("Error debe generar un archivo\n");
+                }
+
+                break;
+
+            case 8:
 
                 if (flag)
                 {
 
                     controller_saveAsText("auto.csv", listaFilterA);
-                    controller_saveAsText("moto.csv", listaFilterM);
-
-                }
-
-                /*if(!flag)
-                {
-                    printf("\nSe debe cargar un archivo previamente.\n");
+                    ///controller_saveAsText("moto.csv", listaFilterM);
                 }
                 else
+
                 {
-                   controller_ListEmployee(listaEmpleados);
+                    printf("Error debe generar un archivo\n");
                 }
-                */
+
+
                 break;
 
-            case 7: ///generar archivo de salida Motos
-                /* if(!flag)
-                {
-                    printf("\nSe debe cargar un archivo previamente.\n");
-                }
-                else
-                {
-                   controller_sortEmployee(listaEmpleados);
-                }*/
-                break;
-
-
-            case 8: ///SALIR
+            case 9: ///SALIR
                 printf("\nConfirma la salida del sistema? (s/n): ");
                 fflush(stdin);
                 scanf("%c",&salir);

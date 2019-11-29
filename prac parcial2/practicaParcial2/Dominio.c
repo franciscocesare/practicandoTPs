@@ -190,15 +190,19 @@ eDominio* newDominio_Parametros(char* id,char* dominio,char* anio,char* tipo)
     {
         if(id!=NULL && dominio!=NULL && anio!=NULL && tipo!=NULL)
         {
-            if(    !eDominio_setId(nuevo, atoi(id))
-                    || !eDominio_setDominio(nuevo,dominio)
-                    || !eDominio_setAnio(nuevo,atoi(anio))
-                    || !eDominio_setTipo(nuevo,tipo ))
-            {
-                free(nuevo);
-                nuevo = NULL;
-            }
+            eDominio_setId(nuevo, atoi(id));
+            eDominio_setDominio(nuevo,dominio);
+            eDominio_setAnio(nuevo,atoi(anio));
+            eDominio_setTipo(nuevo,tipo );
+
+
         }
+        else
+        {
+            free(nuevo);
+        }
+
+
     }
 
     return nuevo;
@@ -286,18 +290,78 @@ void* seteaTipo(eDominio* dom)///la funcion que despues es pasada como pFUNC a l
 
 // PARA FILTER
 
-int filterTipo(void* e) ///la funcion que despues es pasada como pFUNC a ll_filter
+int filterTipo_autos(void* aux) ///la funcion que despues es pasada como pFUNC a ll_filter
 {
     int todoOk = 0;
-    eDominio* dom =NULL;
-    if(e != NULL)
+    char tipo;
+    if(aux != NULL)
     {
-        dom = (eDominio*)e;
-        if(dom->tipo != 'M')
-        {
-            todoOk = 1;
-        }
+        aux = (eDominio*)aux;
+        eDominio_getTipo(aux,&tipo);///el & va porque es un carcater no una cadena
+
+        if (tipo !='M')
+            todoOk=1;
     }
     return todoOk;
 }
 
+int filterTipo_motos(void* aux) ///la funcion que despues es pasada como pFUNC a ll_filter
+{
+    int todoOk = 0;
+    char tipo;
+    if(aux != NULL)
+    {
+        aux = (eDominio*)aux;
+        eDominio_getTipo(aux,&tipo);///el & va porque es un carcater no una cadena
+
+        if (tipo !='A')
+            todoOk=1;
+    }
+    return todoOk;
+}
+
+/*
+int filter_machos(void* aux) ///la funcion que despues es pasada como pFUNC a ll_filter con filtro de UN CARACTER
+{
+    int todoOk = 0;
+    char genero;
+    if(aux != NULL)
+    {
+        aux = (eCachorro*)aux;
+        eCachorro_getGenero(aux,&genero);///el & va porque es un carcater no una cadena
+
+        if (genero !='M')
+            todoOk=1;
+    }
+    return todoOk;
+}
+*/
+int filter_anio_2004(void* aux)
+{
+    int todoOk=0;
+    int anio;
+    if(aux!=NULL)
+    {
+        aux = (eDominio*) aux;
+        eDominio_getAnio(aux, &anio);
+        if (anio==2004)
+            todoOk=1;
+    }
+    return todoOk;
+}
+
+/*int filter_45dias(void* aux) ///la funcion que despues es pasada como pFUNC a ll_filter filtro de INT
+{
+    int todoOk = 0;
+    int dias;
+
+    if(aux != NULL)
+    {
+        aux = (eCachorro*)aux;
+        eCachorro_getDias(aux,&dias);
+        if (dias>45)
+            todoOk=1;
+    }
+    return todoOk;
+}
+*/

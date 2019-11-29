@@ -597,7 +597,7 @@ int ll_sort(LinkedList* thisis, int (*pFunc)(void*,void*), int order)
  *
  */
 
-LinkedList* ll_map (LinkedList* lista, void* (*pFun)(void*))
+LinkedList* ll_map (LinkedList* lista, void* (*pFunc)(void*))
 {
     LinkedList* listaSalida = ll_newLinkedList();
     int i;
@@ -605,13 +605,37 @@ LinkedList* ll_map (LinkedList* lista, void* (*pFun)(void*))
     {
         for(i = 0 ; i < ll_len(lista); i++)
         {
-            pFun(ll_get(lista, i));
-            ll_add(listaSalida,ll_get(lista, i));
+            pFunc(ll_get(lista, i));///aca es la llamada a setrear tipo
+            ll_add(listaSalida,ll_get(lista, i));///agregas con seteartipo el tipo de vehiculo a lña ñista
         }
     }
     return listaSalida;
 }
 
+LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
+{
+    LinkedList* newList = NULL;
+
+    if ( (this != NULL) && (pFunc != NULL) )
+    {
+        newList = ll_newLinkedList();
+
+        void* aux = NULL;
+        int i;
+
+        for (i=0;i<ll_len(this);i++)
+        {
+            aux = ll_get(this,i);
+
+            if (pFunc(aux)==1)
+                ll_add(newList,aux);
+
+            aux = NULL;
+        }
+    }
+
+    return newList;
+}
 
 /*LinkedList* ll_filter (LinkedList* lista, int (*pFunc)(void*), char tipoVehiculo)///con el de manu le agrego el char tipo ára separar por tipo de vehiculo
 {   ///VER en el de marian que filtraba
@@ -640,27 +664,3 @@ LinkedList* ll_map (LinkedList* lista, void* (*pFun)(void*))
     return listaSalida;
 }
 */
-LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
-{
-    LinkedList* newList = NULL;
-
-    if ( (this != NULL) && (pFunc != NULL) )
-    {
-        newList = ll_newLinkedList();
-
-        void* aux = NULL;
-        int i;
-
-        for (i=0;i<ll_len(this);i++)
-        {
-            aux = ll_get(this,i);
-
-            if (pFunc(aux)==1)
-                ll_add(newList,aux);
-
-            aux = NULL;
-        }
-    }
-
-    return newList;
-}

@@ -29,3 +29,6 @@ int setearTipo(eDominio* dom);
 void* seteaTipo(eDominio* e);
 
 int filterTipo(void* e);
+int filterTipo_autos(void* aux);
+int filterTipo_motos(void* aux);
+int filter_anio_2004(void* aux);

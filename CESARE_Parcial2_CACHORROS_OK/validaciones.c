@@ -73,6 +73,7 @@ int menu()
     printf("4. Listar cachorros filtrados por 45 dias\n");
     printf("5. Listar cachorros filtrados por machos\n");
     printf("6. Listar cachorros filtrado por callejeros\n");
+    printf("7. Listar cachorros filtrado por reservado\n");
     printf("8. Salir.\n");
     printf("\nIngrese una opcion del menu: ");
     fflush(stdin);
