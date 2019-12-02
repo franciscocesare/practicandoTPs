@@ -295,3 +295,77 @@
 	"alquileres.h"
 	"informes.h"
 
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\inputdiaz.h
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\categoria.h
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\juego.h
+	"categoria.h"
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\clientes.h
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\alquileres.h
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\informes.h
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+

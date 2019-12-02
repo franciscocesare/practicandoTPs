@@ -62,3 +62,66 @@
 	"prestamos.h"
 	"inputDiaz.h"
 
+1571612010 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\autores.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"autores.h"
+	"inputDiaz.h"
+
+1571612010 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\autores.h
+
+1571612010 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\inputdiaz.h
+
+1571612010 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1571612010 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"libros.h"
+	"autores.h"
+	"inputDiaz.h"
+
+1571612010 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\libros.h
+	"autores.h"
+
+1571612010 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"libros.h"
+	"autores.h"
+	"socios.h"
+	"prestamos.h"
+	"inputDiaz.h"
+
+1571612010 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\socios.h
+
+1571612010 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\prestamos.h
+
+1571612010 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\prestamos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"libros.h"
+	"autores.h"
+	"socios.h"
+	"prestamos.h"
+	"inputDiaz.h"
+
+1571612010 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\practicas parciales todos rocio\parcialbiblioteca_p1\socios.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"socios.h"
+	"inputDiaz.h"
+

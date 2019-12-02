@@ -24,20 +24,16 @@ int parser_CachorroFromText(FILE* pFile, LinkedList* pArrayLinkedCachorros)
 
     if(pFile != NULL && pArrayLinkedCachorros != NULL)
     {
-
         cant=fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n],\n", buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
-
         while(!feof(pFile))
         {
             cant = fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n],\n", buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
-
             if(cant == 6)
             {
                 cacho = newCachorro_Parametros(buffer[0],buffer[1],buffer[2],buffer[3],buffer[4],buffer[5]);
 
                 if(cacho != NULL)
                 {
-
                     ll_add(pArrayLinkedCachorros,cacho);
                     result = 1;
                 }

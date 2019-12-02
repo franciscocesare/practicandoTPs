@@ -26,7 +26,7 @@ int menuInformes()
     return opcion;
 }
 
-void mostrarJuegosMesa(eJuego juego[], int tamJ,eCategoria cat[], int tamC)
+void mostrarJuegosMesa(eJuego juego[], int tamJ,eCategoria cat[], int tamC)///RECIBE Y VINCULA ARRAY DE JUEGOS Y DE CATEGGORIAS
 {
     char cate[21];
 

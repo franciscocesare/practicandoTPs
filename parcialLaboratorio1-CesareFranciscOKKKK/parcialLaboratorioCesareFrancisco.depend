@@ -1,0 +1,155 @@
+# depslib dependency file v1.0
+1571701184 source:c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"categorias.h"
+	"juegos.h"
+	"clientes.h"
+	"alquileres.h"
+
+1571693629 c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\input.h
+
+1571693629 c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\categorias.h
+
+1571693629 c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\juegos.h
+	"categorias.h"
+
+1571702056 c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\clientes.h
+
+1571696849 c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\alquileres.h
+
+1571693629 source:c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\categorias.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"categorias.h"
+
+1571697307 source:c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"categorias.h"
+	"juegos.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1571697307 c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\informes.h
+
+1571693629 source:c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"input.h"
+
+1571693629 source:c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\juegos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"categorias.h"
+	"juegos.h"
+
+1571700446 source:c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"input.h"
+	"categorias.h"
+	"juegos.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1571701132 source:c:\users\alumno\desktop\parciallaboratorio1-cesarefrancisco\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"clientes.h"
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"categorias.h"
+	"juegos.h"
+	"clientes.h"
+	"alquileres.h"
+
+1573415846 c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\input.h
+
+1573415846 c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\categorias.h
+
+1573415846 c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\juegos.h
+	"categorias.h"
+
+1575259718 c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\clientes.h
+
+1573415846 c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\alquileres.h
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\categorias.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"categorias.h"
+
+1575260277 source:c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"clientes.h"
+
+1575261117 source:c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"categorias.h"
+	"juegos.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1575261746 c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\informes.h
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"input.h"
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\juegos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"categorias.h"
+	"juegos.h"
+
+1575262548 source:c:\users\usuario\desktop\practicandotps\parciallaboratorio1-cesarefrancisco\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"input.h"
+	"categorias.h"
+	"juegos.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+

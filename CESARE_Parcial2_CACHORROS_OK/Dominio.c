@@ -262,7 +262,6 @@ eCachorro* newCachorro_Parametros(char* id,char* nombre,char* dias, char* raza, 
     eCachorro* nuevo = newCachorro();
     if( nuevo != NULL)
     {
-
         if (id!=NULL && nombre!=NULL && dias!=NULL &&  raza!=NULL && reservado != NULL && genero!=NULL)
         {
             eCachorro_setId(nuevo,atoi(id));
@@ -276,7 +275,6 @@ eCachorro* newCachorro_Parametros(char* id,char* nombre,char* dias, char* raza, 
         {
             free(nuevo);
         }
-
     }
     return nuevo;
 }
@@ -377,10 +375,6 @@ int filter_callejeros(void* aux) ///la funcion que despues es pasada como pFUNC 
         eCachorro_getRaza(aux,raza);
         if (strcmpi(raza,"Callejero")==0)
             todoOk=1;
-        /*if(cachorro45->dias <= 45)
-        {
-            todoOk = 1;
-        }*/
     }
     return todoOk;
 }
