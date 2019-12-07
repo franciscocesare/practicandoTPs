@@ -129,3 +129,76 @@
 	"menus.h"
 	"almuerzos.h"
 
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\almuerzos.c
+	<stdio.h>
+	<stdlib.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+
+1573415846 c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\inputdiaz.h
+
+1573415846 c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\empleados.h
+	"sectores.h"
+
+1573415846 c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\sectores.h
+
+1573415846 c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\menus.h
+
+1573415846 c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\almuerzos.h
+	"empleados.h"
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\empleados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\informes.c
+	<stdio.h>
+	<stdlib.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"inputDiaz.h"
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+	"informes.h"
+
+1573415846 c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\informes.h
+	"empleados.h"
+	"sectores.h"
+	"menus.h"
+	"almuerzos.h"
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\menus.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"menus.h"
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parciales todos rocio\practicaempleado_p1\sectores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sectores.h"
+

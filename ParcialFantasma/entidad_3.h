@@ -1,0 +1,6 @@
+#ifndef ENTIDAD_3_H_INCLUDED
+#define ENTIDAD_3_H_INCLUDED
+
+
+
+#endif // ENTIDAD_3_H_INCLUDED

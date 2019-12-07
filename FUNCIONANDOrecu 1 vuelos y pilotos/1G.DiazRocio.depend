@@ -1,0 +1,667 @@
+# depslib dependency file v1.0
+1570410442 source:e:\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1570494860 source:e:\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1570410442 e:\1g.diazrocio\inputdiaz.h
+
+1570487018 e:\1g.diazrocio\categoria.h
+
+1570485262 source:e:\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1570493766 source:e:\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1570488864 e:\1g.diazrocio\juego.h
+	"categoria.h"
+
+1570491624 source:e:\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1570491502 e:\1g.diazrocio\clientes.h
+
+1570492010 source:e:\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1570491916 e:\1g.diazrocio\alquileres.h
+
+1570494860 source:e:\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1570494860 e:\1g.diazrocio\informes.h
+
+1571620089 source:c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1570410442 c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\inputdiaz.h
+
+1571615854 c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\categoria.h
+
+1571617135 c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\juego.h
+	"categoria.h"
+
+1571617004 c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\clientes.h
+
+1571615854 c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\alquileres.h
+
+1570485262 source:c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1571620825 source:c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1571620255 source:c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1571620773 c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\informes.h
+
+1570410442 source:c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1571617694 source:c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1571619953 source:c:\users\rocio\desktop\programacion-1\practicas parciales\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1571612010 source:c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1571612010 c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\inputdiaz.h
+
+1571612010 c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\categoria.h
+
+1571612010 c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\juego.h
+	"categoria.h"
+
+1571612010 c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\clientes.h
+
+1571612010 c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\alquileres.h
+
+1571612010 source:c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1571612010 source:c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1571640531 source:c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1571640730 c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\informes.h
+
+1571612010 source:c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1571612010 source:c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1571612010 source:c:\users\usuario\desktop\programacion-1-rocio diaz\practicas parciales\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1571612010 source:c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1571612010 c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\inputdiaz.h
+
+1571612010 c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\categoria.h
+
+1571612010 c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\juego.h
+	"categoria.h"
+
+1571612010 c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\clientes.h
+
+1571612010 c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\alquileres.h
+
+1571612010 source:c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1571612010 source:c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1571640531 source:c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1571640730 c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\informes.h
+
+1571612010 source:c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1571612010 source:c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1571612010 source:c:\users\usuario\desktop\practicandotps-pancho\practica parcial\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\inputdiaz.h
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\categoria.h
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\juego.h
+	"categoria.h"
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\clientes.h
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\alquileres.h
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1573415845 c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\informes.h
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1573415845 source:c:\users\usuario\desktop\practicandotps\programacion-1-rocio muybuenooo\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1573415846 source:c:\users\alumno\desktop\practicandotps\1g.diazrocio\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1573415846 c:\users\alumno\desktop\practicandotps\1g.diazrocio\inputdiaz.h
+
+1573415846 c:\users\alumno\desktop\practicandotps\1g.diazrocio\categoria.h
+
+1573415846 source:c:\users\alumno\desktop\practicandotps\1g.diazrocio\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1575331736 source:c:\users\alumno\desktop\practicandotps\1g.diazrocio\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1575329035 c:\users\alumno\desktop\practicandotps\1g.diazrocio\juego.h
+	"categoria.h"
+
+1575331568 source:c:\users\alumno\desktop\practicandotps\1g.diazrocio\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1575329049 c:\users\alumno\desktop\practicandotps\1g.diazrocio\clientes.h
+
+1575331320 c:\users\alumno\desktop\practicandotps\1g.diazrocio\alquileres.h
+
+1575329411 c:\users\alumno\desktop\practicandotps\1g.diazrocio\informes.h
+
+1575331914 source:c:\users\alumno\desktop\practicandotps\1g.diazrocio\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1575329394 source:c:\users\alumno\desktop\practicandotps\1g.diazrocio\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1575328319 source:c:\users\alumno\desktop\practicandotps\1g.diazrocio\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1575753960 source:e:\practicandotps\fallas recu 1 vuelos y pilotos\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1573415846 e:\practicandotps\fallas recu 1 vuelos y pilotos\inputdiaz.h
+
+1573415846 e:\practicandotps\fallas recu 1 vuelos y pilotos\categoria.h
+
+1575329036 e:\practicandotps\fallas recu 1 vuelos y pilotos\juego.h
+	"categoria.h"
+
+1575329050 e:\practicandotps\fallas recu 1 vuelos y pilotos\clientes.h
+
+1575502678 e:\practicandotps\fallas recu 1 vuelos y pilotos\alquileres.h
+
+1573415846 source:e:\practicandotps\fallas recu 1 vuelos y pilotos\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1575421722 source:e:\practicandotps\fallas recu 1 vuelos y pilotos\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1575754166 source:e:\practicandotps\fallas recu 1 vuelos y pilotos\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1575753744 e:\practicandotps\fallas recu 1 vuelos y pilotos\informes.h
+
+1573415846 source:e:\practicandotps\fallas recu 1 vuelos y pilotos\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1575599794 source:e:\practicandotps\fallas recu 1 vuelos y pilotos\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1575757498 source:e:\practicandotps\fallas recu 1 vuelos y pilotos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1575759630 source:e:\practicandotps\funcionandorecu 1 vuelos y pilotos\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1573415846 e:\practicandotps\funcionandorecu 1 vuelos y pilotos\inputdiaz.h
+
+1573415846 e:\practicandotps\funcionandorecu 1 vuelos y pilotos\categoria.h
+
+1575329036 e:\practicandotps\funcionandorecu 1 vuelos y pilotos\juego.h
+	"categoria.h"
+
+1575329050 e:\practicandotps\funcionandorecu 1 vuelos y pilotos\clientes.h
+
+1575502678 e:\practicandotps\funcionandorecu 1 vuelos y pilotos\alquileres.h
+
+1573415846 source:e:\practicandotps\funcionandorecu 1 vuelos y pilotos\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1575759368 source:e:\practicandotps\funcionandorecu 1 vuelos y pilotos\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1575754166 source:e:\practicandotps\funcionandorecu 1 vuelos y pilotos\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1575753744 e:\practicandotps\funcionandorecu 1 vuelos y pilotos\informes.h
+
+1573415846 source:e:\practicandotps\funcionandorecu 1 vuelos y pilotos\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1575599794 source:e:\practicandotps\funcionandorecu 1 vuelos y pilotos\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1575759456 source:e:\practicandotps\funcionandorecu 1 vuelos y pilotos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1575759630 source:c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\alquileres.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1573415846 c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\inputdiaz.h
+
+1573415846 c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\categoria.h
+
+1575329036 c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\juego.h
+	"categoria.h"
+
+1575329050 c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\clientes.h
+
+1575502678 c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\alquileres.h
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\categoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+
+1575759710 source:c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"clientes.h"
+
+1575754166 source:c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
+1575753744 c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\informes.h
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1575599794 source:c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\juego.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+
+1575759456 source:c:\users\usuario\desktop\practicandotps\funcionandorecu 1 vuelos y pilotos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+	"informes.h"
+
