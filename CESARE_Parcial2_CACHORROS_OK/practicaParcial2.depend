@@ -349,7 +349,7 @@
 
 1574812174 c:\users\usuario\desktop\practicandotps\cesare_parcial2_cachorros_ok\controller.h
 
-1574815136 source:c:\users\usuario\desktop\practicandotps\cesare_parcial2_cachorros_ok\parser.c
+1575059648 source:c:\users\usuario\desktop\practicandotps\cesare_parcial2_cachorros_ok\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"stdlib.h"
@@ -364,4 +364,12 @@
 	"LinkedList.h"
 	"Dominio.h"
 	"validaciones.h"
+
+1575059654 source:c:\users\usuario\desktop\practicandotps\cesare_parcial2_cachorros_ok\dominio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"validaciones.h"
+	"Dominio.h"
 

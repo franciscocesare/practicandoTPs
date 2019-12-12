@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1576083017 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\entidad_1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"entidad_1.h"
+
+1576083997 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\inputdiaz.h
+
+1576083786 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\entidad_2.h
+
+1576082522 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\entidad_3.h
+
+1576082421 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\entidad_1.h
+
+1576082421 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\entidad_2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+
+1576082486 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\entidad_3.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+
+1576082804 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\entidad_4.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"entidad_4.h"
+
+1576082804 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\entidad_4.h
+
+1576084031 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1576083541 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"entidad_4.h"
+	"informes.h"
+
+1576085878 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\informes.h
+
+1576086265 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - clientes\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"entidad_4.h"
+	"informes.h"
+

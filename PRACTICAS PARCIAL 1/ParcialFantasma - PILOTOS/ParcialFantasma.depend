@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1576087412 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\entidad_2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+
+1573415846 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\inputdiaz.h
+
+1576090438 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\entidad_1.h
+
+1576088343 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\entidad_2.h
+
+1576090080 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\entidad_3.h
+	"entidad_1.h"
+
+1576089115 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\entidad_3.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"categoria.h"
+	"juego.h"
+	"clientes.h"
+	"alquileres.h"
+
+1576079716 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\entidad_4.c
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1576092801 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"informes.h"
+
+1576087609 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\informes.h
+
+1576086752 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\entidad_1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"entidad_1.h"
+
+1576088343 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - pilotos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"informes.h"
+

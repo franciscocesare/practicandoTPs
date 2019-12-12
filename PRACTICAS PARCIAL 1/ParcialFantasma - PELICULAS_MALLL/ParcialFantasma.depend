@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1576079716 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\entidad_4.c
+
+1576106474 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\entidad_2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+
+1573415846 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\inputdiaz.h
+
+1576111811 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\entidad_1.h
+	"entidad_2.h"
+
+1576106474 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\entidad_2.h
+
+1575671392 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\entidad_3.h
+
+1576110506 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\entidad_3.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+
+1573415846 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\inputdiaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1576117597 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\informes.c
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"informes.h"
+
+1575671392 c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\informes.h
+
+1576118272 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\entidad_1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"entidad_1.h"
+
+1576118420 source:c:\users\usuario\desktop\practicandotps\practicas parcial 1\parcialfantasma - peliculas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"inputDiaz.h"
+	"entidad_1.h"
+	"entidad_2.h"
+	"entidad_3.h"
+	"informes.h"
+
